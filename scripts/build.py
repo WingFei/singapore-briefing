@@ -1,27 +1,65 @@
 from pathlib import Path
-import re, shutil
+import re, html
 import markdown
 from playwright.sync_api import sync_playwright
 
-root = Path("public")
-root.mkdir(exist_ok=True)
-css = """body{font-family:Arial,sans-serif;background:#f1f5f9;color:#172b44;margin:0;line-height:1.6}main{max-width:850px;margin:24px auto;padding:32px;background:white;border-radius:16px}h1,h2,h3{line-height:1.25;color:#123d69}a{color:#0665b7}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}th,td{padding:10px;border-bottom:1px solid #dce4ed;text-align:left}th{background:#edf4fa}.nav{display:flex;gap:18px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid #ddd}@media(max-width:600px){main{margin:0;padding:18px;border-radius:0}h1{font-size:26px}}@media print{body{background:white;font-size:11pt}main{margin:0;padding:0;max-width:none}.nav{display:none}table{display:table;font-size:9pt}h2,h3{break-after:avoid}tr{break-inside:avoid}a{overflow-wrap:anywhere}}"""
-def page(text, nav):
-    body = markdown.markdown(text, extensions=["tables","fenced_code"])
-    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Singapore Morning Briefing</title><style>'+css+'</style></head><body><main>'+nav+body+'</main></body></html>'
-nav = '<nav class="nav"><a href="latest.pdf">Download PDF</a><a href="archive.html">Previous briefings</a></nav>'
-current = Path("briefings/current.md").read_text()
-(root/"index.html").write_text(page(current,nav))
-entries = []
-for item in sorted(Path("briefings").glob("????-??-??.md"), reverse=True):
-    name = item.stem
-    (root/(name+".html")).write_text(page(item.read_text(),'<nav class="nav"><a href="index.html">Latest briefing</a></nav>'))
-    entries.append("- ["+name+"]("+name+".html)")
-(root/"archive.html").write_text(page("# Previous briefings\n\n"+("\n".join(entries) or "No archived briefings yet."),'<nav class="nav"><a href="index.html">Latest briefing</a></nav>'))
+ROOT = Path('public')
+ROOT.mkdir(exist_ok=True)
+CSS = r'''
+:root{--ink:#183348;--muted:#586d7d;--teal:#007d79;--line:#dce5e9;--paper:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#edf2f4;color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:#006e79;text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #eeb65b;outline-offset:4px}.masthead{background:#102e40;color:white;padding:36px max(24px,calc((100vw - 1080px)/2))}.brand{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#91ddd6}.masthead h1{color:white;font-size:clamp(30px,5vw,48px);letter-spacing:-.035em;line-height:1.15;margin:12px 0}.masthead p{color:#c5d9e3;margin:8px 0;font-size:14px}.toolbar{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.button{display:inline-block;padding:10px 18px;border-radius:9px;text-decoration:none;background:#a6ece0;color:#102e40;font-weight:700}.button.secondary{background:#294656;color:white}main{max-width:1080px;margin:28px auto;padding:0 24px}.contents{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}.contents a{font-size:13px;background:white;border:1px solid var(--line);padding:6px 12px;border-radius:30px;text-decoration:none}.section{background:white;border:1px solid var(--line);border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 4px 16px #16354904;scroll-margin-top:20px}h2{font-size:23px;line-height:1.3;letter-spacing:-.02em;display:flex;gap:12px;align-items:center;margin:0 0 22px}h3{line-height:1.35}.icon{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:#e5f4f1;color:var(--teal);border-radius:10px;flex-shrink:0}.icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}p{margin:0 0 15px}li{margin-bottom:10px}ul,ol{padding-left:24px}.overview{background:#e9f6f2;border-color:#c4e2d9}.overview ul{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0;list-style:none}.overview li{background:white;border:1px solid #d7e8e2;border-radius:12px;padding:18px;margin:0;font-size:15px}.overview li strong{color:#005f5a}.news-card{border-left:3px solid #47a69a;padding:5px 0 5px 18px;margin:20px 0}.news-card p{margin:0}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:20px 0}table{width:100%;border-collapse:collapse;font-size:14px}th{background:#153c50;color:white;font-weight:600}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even){background:#f4f8f9}td:not(:first-child){font-variant-numeric:tabular-nums}.up{color:#007469;font-weight:700}.down{color:#b43844;font-weight:700}.status{color:#795213;background:#fff4d9;border-radius:5px;padding:2px 5px;font-size:12px}.footnote{font-size:12px;color:var(--muted);padding:8px 0 28px}.section a{font-size:13px}.section li a{font-size:inherit}@media(max-width:700px){main{padding:0 14px;margin-top:18px}.masthead{padding:28px 20px}.section{padding:20px;border-radius:12px}h2{font-size:20px}.overview ul{grid-template-columns:1fr;gap:10px}table{min-width:550px}.contents{gap:6px}}
+@page{size:A4;margin:16mm 14mm 18mm}@media print{body{background:white;font-size:10pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}.masthead{padding:22px 24px;border-radius:12px}.masthead h1{font-size:26pt}.masthead p{font-size:9pt}.brand{font-size:8pt}main{margin:18px 0 0;padding:0;max-width:none}.toolbar,.contents{display:none}.section{box-shadow:none;padding:17px;margin-bottom:16px;border-radius:10px}h2{font-size:15pt;margin-bottom:13px;break-after:avoid}.icon{width:30px;height:30px}.icon svg{width:18px;height:18px}.overview ul{display:block;margin:0}.overview li{padding:10px 13px;margin-bottom:8px;font-size:10pt;break-inside:avoid}.news-card{break-inside:avoid;margin:13px 0;padding-left:12px}p{orphans:3;widows:3;margin-bottom:10px}.table-wrap{overflow:visible; border-radius:0;break-inside:auto}table{display:table;min-width:0;font-size:8.5pt}thead{display:table-header-group}tr{break-inside:avoid}th,td{padding:7px 8px}.section a{font-size:8pt}.footnote{font-size:8pt}li{break-inside:avoid}.status{font-size:8pt}}
+'''
+
+def icon(title):
+    paths = {
+        'overview':'<path d="m13 2-8 12h6l-1 8 9-13h-7z"/>',
+        'news':'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10M7 11h10M7 15h4M7 18h10"/>',
+        'finance':'<path d="M3 9h18L12 3zM5 9v10m7-10v10m7-10v10M3 21h18"/>',
+        'stocks':'<path d="M3 3v18h18M6 16l5-5 4 3 6-8m-5 0h5v5"/>',
+        'global':'<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/>',
+        'watch':'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',
+        'takeaways':'<path d="m4 6 2 2 4-4m-6 10 2 2 4-4m-6 10 2 2 4-4M13 6h8M13 14h8M13 22h8"/>',
+    }
+    key=next((k for k in paths if k in title.lower()),'news')
+    if '60-second' in title: key='overview'
+    if '3 things' in title: key='takeaways'
+    return '<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24">'+paths[key]+'</svg></span>'
+
+def render(text, archive=False):
+    chunks=re.split(r'^##\s+(.+)$',text,flags=re.M)
+    intro=chunks[0]
+    title=re.search(r'^#\s+(.+)',intro,re.M)
+    title=title.group(1) if title else 'Singapore Morning Briefing'
+    intro=re.sub(r'^#\s+.+\n?', '',intro,flags=re.M)
+    md=lambda s: markdown.markdown(s,extensions=['tables','fenced_code'])
+    sections=[]; links=[]
+    for i in range(1,len(chunks),2):
+        heading=chunks[i]; body=md(chunks[i+1]); sid='section-'+str(i)
+        if 'developments' in heading.lower():
+            body=re.sub(r'(<p><strong>\d+\..*?</p>)',r'<article class="news-card">\1</article>',body,flags=re.S)
+        body=re.sub(r'<table>(.*?)</table>',r'<div class="table-wrap"><table>\1</table></div>',body,flags=re.S)
+        body=re.sub(r'<td>([+]\d[^<]*)</td>',r'<td class="up">\1</td>',body)
+        body=re.sub(r'<td>([−-]\d[^<]*)</td>',r'<td class="down">\1</td>',body)
+        body=re.sub(r'<td>(Conflicting|Unverified)</td>',r'<td><span class="status">\1</span></td>',body)
+        klass='section overview' if '60-second' in heading else 'section'
+        sections.append(f'<section class="{klass}" id="{sid}"><h2>{icon(heading)}{html.escape(heading)}</h2>{body}</section>')
+        links.append(f'<a href="#{sid}">{html.escape(heading)}</a>')
+    nav='<a class="button" href="latest.pdf">Download PDF</a><a class="button secondary" href="archive.html">Past briefings</a>'
+    if archive: nav='<a class="button" href="index.html">Latest briefing</a>'
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Singapore morning news, finance and markets with dated quotes and linked sources."><title>{html.escape(title)}</title><style>{CSS}</style></head><body><header class="masthead"><div class="brand">Harbour Dispatch / Singapore</div><h1>{html.escape(title)}</h1>{md(intro)}<nav class="toolbar" aria-label="Downloads and archive">{nav}</nav></header><main><nav class="contents" aria-label="Briefing sections">{''.join(links)}</nav>{''.join(sections)}<footer class="footnote">Sources are linked beside each item. Quote dates and verification limits appear with the relevant figures. All times are Singapore time unless stated otherwise.</footer></main></body></html>'''
+
+current=Path('briefings/current.md').read_text()
+(ROOT/'index.html').write_text(render(current))
+entries=[]
+for item in sorted(Path('briefings').glob('????-??-??.md'),reverse=True):
+    name=item.stem
+    (ROOT/(name+'.html')).write_text(render(item.read_text(),True))
+    entries.append(f'- [{name}]({name}.html)')
+(ROOT/'archive.html').write_text(render('# Previous briefings\n\n## Archive\n\n'+'\n'.join(entries),True))
 with sync_playwright() as p:
-    browser = p.chromium.launch()
-    tab = browser.new_page()
-    tab.goto((root/"index.html").resolve().as_uri())
-    tab.pdf(path=str(root/"latest.pdf"),format="A4",print_background=True,display_header_footer=True,header_template="<span></span>",footer_template='<div style="font-size:9px;width:100%;text-align:center">Singapore Morning Briefing · <span class="pageNumber"></span> / <span class="totalPages"></span></div>',margin={"top":"18mm","bottom":"18mm","left":"15mm","right":"15mm"})
+    browser=p.chromium.launch()
+    tab=browser.new_page()
+    tab.goto((ROOT/'index.html').resolve().as_uri())
+    tab.pdf(path=str(ROOT/'latest.pdf'),format='A4',print_background=True,display_header_footer=True,header_template='<span></span>',footer_template='<div style="font-family:Arial;font-size:9px;width:100%;text-align:center;color:#586d7d">HARBOUR DISPATCH · Singapore Morning Briefing &nbsp; | &nbsp; <span class="pageNumber"></span> / <span class="totalPages"></span></div>',margin={'top':'16mm','bottom':'18mm','left':'14mm','right':'14mm'})
     browser.close()
-(root/".nojekyll").touch()
+(ROOT/'.nojekyll').touch()
