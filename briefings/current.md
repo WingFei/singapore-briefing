@@ -25,27 +25,33 @@ Contribution data were unavailable, so this edition does not rank the largest in
 
 ## SINGAPORE BELLWETHERS
 
-Current official constituent weights could not be verified. This is a monitoring list, **not a certified top-five ranking**. All prices below are SGD, 5 October close; daily changes compare 2 October.
+**PREVIOUS CLOSE · 5 October 2026 · SGD.** Daily move compares 2 October. Bellwethers are a monitoring list; current official index weights were unavailable.
 
-| Company / ticker | Close | Daily move | 30D / 1Y |
-|---|---:|---|---|
-| DBS / D05 | 77.83 | ▲ 0.62 (+0.80%) | Unavailable |
-| OCBC / O39 | 31.88 | ▲ 0.22 (+0.69%) | Unavailable |
-| UOB / U11 | 43.06 | ▼ 0.05 (-0.12%) | Unavailable |
-| Singtel / Z74 | 4.27 | ▲ 0.02 (+0.47%) | 30D ▼ 5.53%; 1Y unavailable |
-| SGX / S68 | Unavailable | Conflicting earlier retrievals | Unavailable |
+| Company / ticker | Close | Daily | 30D | 1Y |
+|---|---:|---|---|---|
+| DBS / D05 | 77.83 | ▲ +0.80% | ▼ −1.04% | ▲ +47.24% |
+| OCBC / O39 | 31.88 | ▲ +0.69% | ▼ −1.21% | ▲ +89.42% |
+| UOB / U11 | 43.06 | ▼ −0.12% | ▲ +2.50% | ▲ +22.16% |
+| Singtel / Z74 | 4.27 | ▲ +0.47% | ▼ −5.53% | ▲ +0.47% |
+| SGX / S68 | 20.75 | ▼ −1.14% | ▼ −17.98% | ▲ +18.37% |
 
-[DBS](https://stockanalysis.com/quote/sgx/D05/history/) · [OCBC](https://stockanalysis.com/quote/sgx/O39/history/) · [UOB](https://stockanalysis.com/quote/sgx/U11/history/) · [Singtel](https://stockanalysis.com/quote/sgx/Z74/history/) · [SGX](https://stockanalysis.com/quote/sgx/S68/history/)
+**At a glance:** UOB is the only name above its 30-day reference. All five are above their year-earlier closing prices; SGX has the sharpest 30-day decline. These comparisons do not establish the cause of a move.
 
-DBS outperformed the other two banks for the day. Its current adjusted-close field was missing, preventing a consistently adjusted historical calculation. OCBC’s gain contrasts with UOB’s modest decline; no independently verified company catalyst is assigned to either.
+**How to read 30D / 1Y:** price change, excluding dividends, calculated as (latest close ÷ reference close − 1) × 100. The latest session is 5 October 2026. Reference dates are **4 September 2026** and **3 October 2025**, the last sessions on or before 5 September 2026 and 5 October 2025. These are calendar periods, not 30 trading days. The table uses provider closing-price fields consistently, not dividend-adjusted fields. Separate corporate-action reconciliation was not completed; returns should not be read as investor total returns.
 
-Singtel’s 30-day price change uses 4.27 on 5 October and 4.52 on 4 September, the last session on or before the 5 September calendar reference. Calculation: (4.27 / 4.52 − 1) × 100. Both dates show identical close and adjusted-close fields. This is a price comparison, not a separately calculated total return.
+| Reference close · SGD | 4 Sep 2026 | 3 Oct 2025 |
+|---|---:|---:|
+| DBS / D05 | 78.65 | 52.86 |
+| OCBC / O39 | 32.27 | 16.83 |
+| UOB / U11 | 42.01 | 35.25 |
+| Singtel / Z74 | 4.52 | 4.25 |
+| SGX / S68 | 25.30 | 17.53 |
 
-For other stocks, incomplete comparable reference data prevents publication of 30D/1Y returns. SGX’s fetched historical row now shows 20.75, but an earlier edition recorded a conflicting retrieval; independent reconciliation remains pending.
+**Data:** current and 30D dated rows: [DBS](https://stockanalysis.com/quote/sgx/D05/history/) · [OCBC](https://stockanalysis.com/quote/sgx/O39/history/) · [UOB](https://stockanalysis.com/quote/sgx/U11/history/) · [Singtel](https://stockanalysis.com/quote/sgx/Z74/history/) · [SGX](https://stockanalysis.com/quote/sgx/S68/history/). Year-earlier rows: [DBS](https://sg.finance.yahoo.com/quote/D05.SI/history/) · [OCBC](https://sg.finance.yahoo.com/quote/O39.SI/history/) · [UOB](https://sg.finance.yahoo.com/quote/U11.SI/history/) · [Singtel](https://sg.finance.yahoo.com/quote/Z74.SI/history/) · [SGX](https://sg.finance.yahoo.com/quote/S68.SI/history/). SGX’s 20.75 close and −1.14% daily move were corroborated by [Investing.com](https://cn.investing.com/equities/singapore-exchange-historical-data); this replaces the earlier conflicting figure.
 
 ### Other Singapore Stocks & REITs
 
-Singapore Airlines (C6L), CapitaLand Investment (9CI), CICT (C38U) and CapitaLand Ascendas REIT (A17U) remain on the monitoring list. Historical pages were retrieved, but complete cutoff quote reconciliation and material-filing checks were not completed. Their fresh prices and dividends are therefore unavailable in this edition. This does not establish that no announcements occurred.
+Singapore Airlines, CapitaLand Investment, CICT and CapitaLand Ascendas REIT remain on the monitoring list. Their prices and filing checks were not refreshed as part of this section update.
 
 ## PRECIOUS METALS · SPOT, USD/TROY OZ
 
@@ -55,15 +61,29 @@ Reuters described a balance between dollar/yield pressure and reduced expectatio
 
 ## GLOBAL MARKETS · LAST CLOSE
 
-| Index | 5 October close | Daily change | 30D / 1Y |
-|---|---:|---:|---|
-| S&P 500 | 7,773.95 | +0.66% | Unavailable |
-| Nasdaq 100 | Unavailable | Unavailable | Unavailable |
-| Hang Seng | Unavailable | Unavailable | Unavailable |
+**PREVIOUS CLOSE · 5 October 2026 · Index points.** US cash session ended 4:00 AM SGT on 6 October; Hong Kong’s session was completed on 5 October.
 
-US session ended **4:00 AM SGT, 6 October**. Supporting context: Nasdaq **Composite** closed at 27,477.31 (+1.05%); it is not the Nasdaq 100. Reuters linked the rally to Nvidia and Microsoft and lower oil prices. Its closing report also described reduced October Fed-hike expectations following Friday’s labour data. [Reuters closing-session report](https://www.reuters.com/world/europe/wall-st-futures-dip-tech-stocks-take-breather-2026-10-05/)
+| Index | Last close | Daily | 30D | 1Y |
+|---|---:|---|---|---|
+| S&P 500 | 7,773.95 | ▲ +0.66% | ▲ +0.72% | ▲ +15.76% |
+| Nasdaq 100 | 31,076.44 | ▲ +0.87% | ▲ +5.19% | ▲ +25.38% |
+| Hang Seng | 24,040.34 | ▲ +0.28% | ▼ −6.28% | ▼ −11.42% |
 
-Verified cutoff Treasury yields, Brent/WTI settlements and comparable Asian index histories are unavailable here. Dynamic quote panels have not been substituted. For Singapore, equity strength alongside unresolved financing-cost pressure warrants attention to earnings and borrowing conditions; this is interpretation.
+**At a glance:** Nasdaq 100 has the strongest 30D and 1Y price performance in this comparison. Hang Seng’s modest daily rebound leaves it below both historical references. Nasdaq 100 is distinct from Nasdaq Composite.
+
+**Method:** price-index returns, excluding dividends. Reference closes use **4 September 2026** for 30D and **3 October 2025** for 1Y. Formula: (5 October close ÷ reference close − 1) × 100.
+
+| Reference · points | 4 Sep 2026 | 3 Oct 2025 |
+|---|---:|---:|
+| S&P 500 | 7,718.60 | 6,715.79 |
+| Nasdaq 100 | 29,544.15 | 24,785.52 |
+| Hang Seng | 25,650.87 | 27,140.92 |
+
+**Sources:** [S&P 500 latest close, AP](https://apnews.com/article/7f89624b604f25f313502c77d4d0b010), [4 September close, AP](https://apnews.com/article/ebc11cfa2cf8baf4491bf3d4199c1d74), [S&P history](https://uk.finance.yahoo.com/quote/%5EGSPC/history/); [Nasdaq official 5 October level](https://indexes.nasdaqomx.com/Index/History/NDX), [Nasdaq historical references](https://finance.yahoo.com/quote/%5ENDX/history/), [1Y reference](https://ca.finance.yahoo.com/quote/%255ENDX/history/); [Hang Seng close](https://ca.investing.com/indices/hang-sen-40-historical-data), [30D reference](https://finance.yahoo.com/quote/%5EHSI/history/?frequency=1d), [1Y reference](https://ca.finance.yahoo.com/quote/%5EHSI/history/), and [Reuters session direction](https://www.reuters.com/world/asia-pacific/hong-kong-stocks-tick-down-thin-trade-property-financials-drag-2026-10-05/).
+
+**Data reconciliation:** a derived S&P quote differed from the cash close; AP’s completed-session figure is used. An FT Hang Seng row differed from the reported close; 24,040.34 is supported by the dated historical table and the independently reported +0.28% session move. No live panels are used.
+
+**Singapore implication · Analysis:** stronger US technology prices may support sentiment, while Hong Kong’s weaker longer-term performance points to regional divergence. Price performance alone is not a forecast for Singapore shares.
 
 ## ON THE RADAR
 
@@ -103,25 +123,9 @@ Only one future event in this week was supported by the retrieved reporting: **W
 
 ## WORLD / SINGAPORE
 
-<div class="editorial-columns"><article class="editorial-column">
-
-### WORLD
-
-**Markets await clearer policy signals.** US stocks advanced despite continued focus on borrowing costs. The verified closing report is summarised in Global Markets; no additional unverified geopolitical claims are carried forward.
-
-Trade, shipping and energy remain relevant transmission channels for Singapore. This is an analytical framework, not a claim of a new disruption. A complete independently verified world-news roundup could not be assembled in this run.
-
-</article><article class="editorial-column">
-
-### SINGAPORE
-
-**Haze · Official evening update.** At **6 PM on 5 October**, one-hour PM2.5 was **75–97 µg/m³**, classified as elevated, and 24-hour PSI was **94–122**. MSS observed smoke drifting from southern Sumatra and forecast high-moderate to mid-unhealthy PSI. It advised using one-hour PM2.5 for immediate outdoor activity and the PSI forecast for next-day planning. These are yesterday’s readings; this morning’s regional values are unavailable. [MSS, 5 October](https://www.weather.gov.sg/haze-situation-update-05-october-2026/)
-
-**Housing:** verified URA flash estimates appear in On the Radar. Current HDB statistics, COE results, electricity tariffs and a fresh MAS statement were not independently verified.
-
-**Currency:** USD/SGD (SGD per US$1) and SGD/MYR (MYR per S$1) cutoff quotes are unavailable. No conversion-widget value is used as historical evidence.
-
-</article></div>
+<p class="section-intro">The developments to understand, their relevance to Singapore and what to follow next. Dates distinguish overnight news from background.</p>
+<div class="editorial-columns"><div class="editorial-column"><h3 class="region-heading">World</h3><article class="dispatch-story"><div class="story-label">MARKETS · 5 OCTOBER</div><h4>US technology shares lift the close</h4><p>The S&P 500 gained 0.66%; Nasdaq Composite advanced 1.05%. Reuters linked the session to gains in Nvidia and Microsoft and lower oil prices.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: global technology sentiment is relevant to Singapore electronics and data-centre exposure.</p></div><p class="story-watch"><strong>Watch next</strong> · Whether earnings support recent market gains.</p><a class="story-source" href="https://www.reuters.com/world/europe/wall-st-futures-dip-tech-stocks-take-breather-2026-10-05/">Reuters · 5 October ↗</a></article><article class="dispatch-story"><div class="story-label">ASIA · 5 OCTOBER</div><h4>Hong Kong edges higher in holiday trade</h4><p>Reuters reported a roughly 0.3% Hang Seng gain as AI shares offset property weakness. Mainland financial markets are closed from 1–7 October.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: holiday-thinned trading provides a limited test of wider China sentiment.</p></div><p class="story-watch"><strong>Watch next</strong> · Mainland trading resumes on 8 October; assess whether the move broadens.</p><a class="story-source" href="https://www.reuters.com/world/asia-pacific/hong-kong-stocks-tick-down-thin-trade-property-financials-drag-2026-10-05/">Reuters · 5 October ↗</a></article></div><div class="editorial-column"><h3 class="region-heading">Singapore</h3><article class="dispatch-story"><div class="story-label">AIR QUALITY · 5 OCTOBER, 6 PM</div><h4>Haze remains a planning concern</h4><p>Official evening readings showed 24-hour PSI of 94–122 and one-hour PM2.5 of 75–97 µg/m³. Morning regional readings were not independently retrieved.</p><div class="story-impact"><strong>Why it matters</strong><p>MSS advises checking one-hour PM2.5 for immediate outdoor activity and the PSI forecast for next-day planning.</p></div><p class="story-watch"><strong>Watch next</strong> · Fresh NEA readings and whether smoke continues drifting towards Singapore.</p><a class="story-source" href="https://www.weather.gov.sg/haze-situation-update-05-october-2026/">MSS · Official advisory ↗</a></article><article class="dispatch-story"><div class="story-label">HOUSING · BACKGROUND, 1 OCTOBER</div><h4>Prices rise while transactions fall</h4><p>URA’s Q3 flash estimate showed private-home prices up 1.4% quarter on quarter; transaction volume fell about 30%.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: rising prices do not imply broad volume growth. The flash estimate can be revised.</p></div><p class="story-watch"><strong>Watch next</strong> · Full Q3 statistics on 23 October.</p><a class="story-source" href="https://www.ura.gov.sg/news/media/pr26-69/">URA · Official release ↗</a></article></div></div>
+<p class="coverage-note"><strong>Coverage note:</strong> this is a focused verified selection. Currency quotes, fresh COE results, electricity tariffs and additional geopolitical developments were not refreshed for this update.</p>
 
 ## INDUSTRY PULSE · LIGHTING & ELECTRICAL
 
