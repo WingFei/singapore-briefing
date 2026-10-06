@@ -28,6 +28,10 @@ td{display:grid;grid-template-columns:minmax(95px,35%) 1fr;border:0;padding:6px 
 td:before{content:attr(data-label);font-weight:700;color:#596269;font-size:12px}}
 @media print{.masthead{margin:0;padding:14px 0;background:white;border-radius:0}.masthead h1{font-size:32pt}.section{border-radius:0;padding:14px}h3{font-size:16pt;break-after:avoid}.editorial-columns{display:block}.market-value{font-size:22pt}thead{position:static;clip:auto;width:auto;height:auto;display:table-header-group}table{display:table;table-layout:fixed}tbody{display:table-row-group}tr{display:table-row}td{display:table-cell;width:auto}td:before{display:none}}
 
+.dispatch-story{border:1px solid #dce1e4;border-top:3px solid #b28b42;background:#fafbfc;border-radius:8px;padding:18px;margin:0 0 16px;break-inside:avoid}.story-label{font:700 10px/1.5 system-ui,sans-serif;letter-spacing:.09em;color:#74603a}.dispatch-story h4{font:700 23px/1.2 Georgia,serif;margin:10px 0 12px}.dispatch-story p{font-size:14px;line-height:1.65}.story-impact{background:#edf3f4;border-radius:5px;padding:10px 12px;margin:12px 0}.story-impact strong,.story-watch strong{font-size:11px;letter-spacing:.04em;text-transform:uppercase}.story-impact p{margin:4px 0 0}.story-source{display:inline-block;font-size:12px}.region-heading{border-bottom:2px solid #273139;padding-bottom:10px;margin:4px 0 18px}.section-intro,.coverage-note{font-size:13px;color:#596269}.badge.up{background:#edf7f0}.badge.down{background:#fff1f0}
+@media(max-width:700px){.dispatch-story{padding:16px}.dispatch-story h4{font-size:23px}.editorial-columns{gap:12px}}
+@media print{.editorial-columns{display:block}.dispatch-story{padding:12px;margin-bottom:12px}.dispatch-story h4{font-size:15pt}.dispatch-story p{font-size:10pt}.story-label{font-size:8pt}.story-source{font-size:8pt}.region-heading{break-after:avoid}.coverage-note{font-size:9pt}}
+
 '''
 
 def icon(title):
@@ -64,6 +68,8 @@ def render(text, archive=False):
                 idx=iter(labels)
                 return re.sub(r'<td([^>]*)>',lambda cell: '<td'+cell.group(1)+' data-label="'+html.escape(re.sub('<.*?>','',next(idx,'')),quote=True)+'">',m.group(0))
             return re.sub(r'<tr>.*?</tr>',row,table,flags=re.S)
+        if 'BELLWETHERS' in heading or 'GLOBAL MARKETS' in heading:
+            body=re.sub(r'([▲▼] [＋+−-]\d+\.\d+%)', lambda m: '<span class="badge '+('up' if '▲' in m.group(0) else 'down')+'">'+m.group(0)+'</span>', body)
         body=re.sub(r'<table>.*?</table>',label_table,body,flags=re.S)
         body=re.sub(r'<table>(.*?)</table>',r'<div class="table-wrap"><table>\1</table></div>',body,flags=re.S)
         body=re.sub(r'<td>([+]\d[^<]*)</td>',r'<td class="up">\1</td>',body)
@@ -91,3 +97,4 @@ with sync_playwright() as p:
     tab.pdf(path=str(ROOT/'latest.pdf'),format='A4',print_background=True,display_header_footer=True,header_template='<span></span>',footer_template='<div style="font-family:Arial;font-size:9px;width:100%;text-align:center;color:#586d7d">HARBOUR DISPATCH · Singapore Morning Briefing &nbsp; | &nbsp; <span class="pageNumber"></span> / <span class="totalPages"></span></div>',margin={'top':'16mm','bottom':'18mm','left':'14mm','right':'14mm'})
     browser.close()
 (ROOT/'.nojekyll').touch()
+
