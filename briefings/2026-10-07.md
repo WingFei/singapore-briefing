@@ -5,6 +5,8 @@ MORNING DISPATCH
 Information cutoff: **7 October 2026, 8:00 AM SGT**  
 Prepared: **7 October 2026, 8:01 AM SGT**
 
+**Correction notice:** Previously displayed 30D returns for all five Singapore bellwethers and Hang Seng have been withdrawn following a reader-reported data error. All 30D and 1Y fields are unavailable until dated endpoints, adjustment methodology and independent corroboration pass verification. Associated historical trend commentary has also been removed. This correction does not assert replacement returns.
+
 **Verified selection.** Market observations below predate the cutoff. Unavailable fields reflect retrieval limitations; they are not estimates. Yesterday's published Markdown was checked for comparison.
 
 ## 60-second overview
@@ -29,15 +31,13 @@ Prepared: **7 October 2026, 8:01 AM SGT**
 
 | Company / ticker | Close | Daily absolute / percentage | 30D | 1Y |
 |---|---:|---|---|---|
-| DBS / D05 | 78.56 | ▲ +0.73 (+0.94%) | ▼ -0.11% | Unavailable |
-| OCBC / O39 | 32.20 | ▲ +0.32 (+1.00%) | ▼ -0.22% | Unavailable |
-| UOB / U11 | 43.72 | ▲ +0.66 (+1.53%) | ▲ +4.07% | Unavailable |
-| Singtel / Z74 | 4.25 | ▼ -0.02 (-0.47%) | ▼ -5.97% | Unavailable |
-| SGX / S68 | 21.04 | ▲ +0.29 (+1.40%) | ▼ -16.84% | Unavailable |
+| DBS / D05 | 78.56 | ▲ +0.73 (+0.94%) | Unavailable | Unavailable |
+| OCBC / O39 | 32.20 | ▲ +0.32 (+1.00%) | Unavailable | Unavailable |
+| UOB / U11 | 43.72 | ▲ +0.66 (+1.53%) | Unavailable | Unavailable |
+| Singtel / Z74 | 4.25 | ▼ -0.02 (-0.47%) | Unavailable | Unavailable |
+| SGX / S68 | 21.04 | ▲ +0.29 (+1.40%) | Unavailable | Unavailable |
 
-**Method:** 30D = (6 October closing price ÷ 4 September closing price − 1) × 100. The calendar reference is 6 September, a Sunday. Reference prices are DBS 78.65, OCBC 32.27, UOB 42.01, Singtel 4.52 and SGX 25.30. Provider close and adjusted-close fields coincide at both endpoints. These are price comparisons, not independently reconstructed dividend-reinvested total returns. The 1Y reference should be **6 October 2025**; that day's comparable series could not be retrieved. Yesterday's 3 October references are not substituted.
-
-**DBS:** the daily gain brings its price close to the September reference, but the 30D comparison remains slightly negative. **OCBC:** its advance similarly leaves the month comparison near flat. **UOB:** the strongest daily bank gain also leaves it above its 30D reference. **Singtel:** the daily decline contrasts with bank strength. **SGX:** Tuesday's rebound leaves a substantial month decline; price history alone does not establish its cause.
+**Historical verification:** 30D and 1Y returns are withheld. For the 6 October endpoint, the calendar targets are 6 September 2026 and 6 October 2025. Actual reference sessions must be verified against each exchange calendar. Any future numeric return will include the endpoint and reference prices, dates, adjustment basis, independent corroboration and reproducible calculation: (endpoint / reference - 1) × 100. Search snippets and prior editions are insufficient evidence.
 
 Dated rows: [DBS](https://stockanalysis.com/quote/sgx/D05/history/) · [OCBC](https://stockanalysis.com/quote/sgx/O39/history/) · [UOB](https://stockanalysis.com/quote/sgx/U11/history/) · [Singtel](https://stockanalysis.com/quote/sgx/Z74/history/) · [SGX](https://stockanalysis.com/quote/sgx/S68/history/). Provider observation labels: 6 October, 5:04–5:15 PM SGT; historical closing rows are used rather than live panels.
 
@@ -69,13 +69,13 @@ Gold observation: **6 October, 18:12 UTC = 7 October, 2:12 AM SGT**. Other metal
 |---|---:|---|---|---|
 | S&P 500 | 7,818.93 | ▲ +44.98 (+0.58%) | Unavailable | Unavailable |
 | Nasdaq 100 | 31,224.47 | ▲ +148.03 (+0.48%) | Unavailable | Unavailable |
-| Hang Seng | 24,280.56 | ▲ +240.22 (+1.00%) | ▼ -5.34% | Unavailable |
+| Hang Seng | 24,280.56 | ▲ +240.22 (+1.00%) | Unavailable | Unavailable |
 
 US cash session ended **7 October, 4:00 AM SGT**; Hong Kong closed on 6 October. [AP US close](https://apnews.com/article/267ca73e15e09f7e8deb5f6076405f48) · [Nasdaq 100 dated history](https://ca.investing.com/indices/nq-100-historical-data) · [Hang Seng history](https://stockinvest.us/stock-price/%5EHSI).
 
 **Reconciliation:** AP's S&P cash close is used; a derived Investing.com row gives 7,819.04 instead. Nasdaq's official page shows inconsistent change/previous-close fields, so the dated history is used with the change calculated from 31,076.44. Nasdaq 100 is not Nasdaq Composite.
 
-Hang Seng's 30D reference is **4 September, 25,650.87**, the last session before 6 September. This is a price-index return. Other required historical endpoints were not obtained from full accessible tables.
+**Historical verification:** All index 30D and 1Y values are withheld pending independently verified comparable cash-index endpoints. The previous Hang Seng reference and return are withdrawn.
 
 AP reports record closes for S&P 500 and Nasdaq Composite, supported by earnings optimism and lower yields; Constellation's Google electricity agreement was a notable story. The Composite's supporting close was 27,599.79, not a replacement for Nasdaq 100.
 
@@ -170,7 +170,7 @@ The 6 October ChatGPT release notes announce audio uploads for paid subscription
 
 ## SOURCES & DATA
 
-Sources actually used are linked beside claims. Market dates: SGX and Hong Kong 6 October; US 6 October session ending 7 October SGT. Stock Analysis dated rows supply Singapore stock closes and 4 September references. AP supplies the reconciled S&P cash close. Investing.com supplies STI and Nasdaq 100 dated rows; StockInvest supplies Hang Seng history.
+Sources actually used are linked beside claims. Market dates: SGX and Hong Kong 6 October; US 6 October session ending 7 October SGT. Stock Analysis dated rows were cited for Singapore stock closes. Previously cited historical reference prices are withdrawn and must not be reused as verified evidence. AP supplies the reconciled S&P cash close. Investing.com supplies STI and Nasdaq 100 dated rows; StockInvest supplies Hang Seng history.
 
 Official releases: MSS 6 October, 5 PM observations; EMA 6 October; CPF updated 15 September; URA 1 October flash estimate; LTA 2026 bidding schedule; Signify financial calendar; Acuity 1 October company release distributed by GlobeNewswire; OpenAI 6 October announcements.
 
