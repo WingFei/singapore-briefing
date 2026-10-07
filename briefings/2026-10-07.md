@@ -201,7 +201,7 @@ Candidate observations above are **not approved return evidence**. Stock Analysi
 
 The build now rejects numeric historical returns without structured endpoint evidence and reproducible calculations. Today's edition publishes **zero numeric 30D/1Y returns**.
 
-Secondary tables inspected: [DBS](https://www.investing.com/equities/dbs-group-holdings-historical-data) · [UOB](https://www.investing.com/equities/united-overseas-bank-historical-data) · [Singtel](https://www.investing.com/equities/singapore-telecommunications-historical-data) · [SGX](https://www.investing.com/equities/singapore-exchange-historical-data). Retrieval: 7 October 2026, 8:24 AM SGT; observations retained only from before 8 AM.
+<p style="font-size:8pt;line-height:1.3">Secondary tables: <a href="https://www.investing.com/equities/dbs-group-holdings-historical-data">DBS</a> · <a href="https://www.investing.com/equities/united-overseas-bank-historical-data">UOB</a> · <a href="https://www.investing.com/equities/singapore-telecommunications-historical-data">Singtel</a> · <a href="https://www.investing.com/equities/singapore-exchange-historical-data">SGX</a>. Retrieved 7 Oct, 8:24 AM SGT; pre-cutoff observations only.</p>
 
 COMPILED FROM OPEN REPORTING · GENERATED 7 OCTOBER 2026, 8:24 AM SGT
 
