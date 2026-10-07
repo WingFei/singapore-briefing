@@ -49,7 +49,7 @@ def icon(title):
     key=next((k for k in paths if k in title.lower()),'news')
     if '60-second' in title: key='overview'
     if '3 things' in title: key='takeaways'
-    return '<span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24">'+paths[key]+'</svg></span>'
+    return '<span class="icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#96722a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+paths[key]+'</svg></span>'
 
 def render(text, archive=False):
     chunks=re.split(r'^##\s+(.+)$',text,flags=re.M)
