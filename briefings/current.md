@@ -1,177 +1,181 @@
 # Harbour Dispatch
 
 MORNING DISPATCH  
-**TUESDAY · 6 OCTOBER 2026 · SINGAPORE**  
-Information cutoff: **6 October, 8:00 AM SGT**  
-Prepared: **6 October, 9:34 AM SGT**
+**WEDNESDAY · 7 OCTOBER 2026 · SINGAPORE**  
+Information cutoff: **7 October 2026, 8:00 AM SGT**  
+Prepared: **7 October 2026, 8:01 AM SGT**
 
-This is a limited verified edition. Some current data could not be independently retrieved. Unavailable fields are explicit; earlier editions are not treated as fresh evidence.
+**Verified selection.** Market observations below predate the cutoff. Unavailable fields reflect retrieval limitations; they are not estimates. Yesterday's published Markdown was checked for comparison.
 
 ## 60-second overview
 
-- **Singapore shares recovered:** the STI closed Monday at **5,664.33**, up **29.51 points (+0.52%)**. DBS and OCBC rose; UOB slipped. These are completed-session figures.
-- **Haze remains an operational watch:** the official 5 October evening advisory recorded PSI **94–122** and elevated one-hour PM2.5. Fresh regional morning readings could not be verified.
-- **Lighting and AI require a closer reading:** Acuity’s recent group growth contrasts with softer lighting sales; OpenAI announced text-provenance changes and a planned US advertising test.
+- **Banks lift Singapore:** STI finished at **5,701.54**, up **37.21 points (+0.66%)** on 6 October. All three local banks gained, unlike Monday's mixed performance.
+- **Air quality deteriorates:** MSS's 6 October evening advisory reported **24-hour PSI 102–135**, above the previous evening's 94–122 range. These are dated observations, not current morning readings.
+- **Energy and enterprise AI move forward:** EMA is studying a Pulau Tekong energy cluster; OpenAI and Atlassian announced a broader partnership connecting models with organisational knowledge.
 
 ## STRAITS TIMES INDEX · STI
 
-<div class="market-value">5,664.33 <span class="up">▲ 29.51 (+0.52%)</span></div>
+<div class="market-value">5,701.54 <span class="up">▲ +37.21 (+0.66%)</span></div>
 
-**Latest completed session: Monday, 5 October 2026.** Friday’s close was 5,634.82. The change is calculated between those two closes. [Investing.com historical table](https://ca.investing.com/indices/singapore-straits-time-historical-data)
+**COMPLETED SESSION · Tuesday, 6 October · Index points.** Previous close: 5,664.33. Daily movement is calculated from these closes. [Dated STI history](https://ca.investing.com/indices/singapore-straits-time-historical-data)
 
-The recovery followed Friday’s decline. DBS advanced 0.80% and OCBC 0.69%, while UOB eased 0.12%; the banks therefore did not move uniformly. Singtel gained 0.47%. These stock movements are verified from dated historical rows, rather than intraday widgets refreshed after the cutoff.
+**SINCE YESTERDAY:** the index advanced again, and UOB joined DBS and OCBC in positive territory. Business Times reported that Singapore tracked Wall Street's overnight gains. DFI Retail rose 4%, while ST Engineering fell 2%; these were percentage movers, not a verified ranking of index-point contributions. Market breadth was positive, with 267 gainers against 232 losers. [Business Times · 6 October, 6:08 PM SGT](https://www.businesstimes.com.sg/companies-markets/singapore-shares-track-wall-street-gains-tuesday-sti-0-7)
 
-Contribution data were unavailable, so this edition does not rank the largest index contributors or attribute the rise to a specific policy development. The next useful test is whether strength broadens beyond selected bellwethers. That is an editorial watch point, not a forecast. At the information cutoff SGX had not begun Tuesday’s normal trading session.
+**Analysis:** the next question is whether the improvement spreads beyond banks. A rising benchmark can coexist with weaker individual sectors, as Singtel's decline illustrates. No specific policy announcement is assigned as the cause of the move, and index contribution data were not retrieved. Singapore's next cash session had not started at the cutoff. US overnight results belong to the next sentiment backdrop, rather than an explanation for prices that had already closed.
 
 ## SINGAPORE BELLWETHERS
 
-**PREVIOUS CLOSE · 5 October 2026 · SGD.** Daily move compares 2 October. Bellwethers are a monitoring list; current official index weights were unavailable.
+**COMPLETED SESSION · 6 October · SGD.** Current official constituent weights and their effective date were not retrieved, so this is a monitoring list rather than a claimed top-five ranking.
 
-| Company / ticker | Close | Daily | 30D | 1Y |
+| Company / ticker | Close | Daily absolute / percentage | 30D | 1Y |
 |---|---:|---|---|---|
-| DBS / D05 | 77.83 | ▲ +0.80% | ▼ −1.04% | ▲ +47.24% |
-| OCBC / O39 | 31.88 | ▲ +0.69% | ▼ −1.21% | ▲ +89.42% |
-| UOB / U11 | 43.06 | ▼ −0.12% | ▲ +2.50% | ▲ +22.16% |
-| Singtel / Z74 | 4.27 | ▲ +0.47% | ▼ −5.53% | ▲ +0.47% |
-| SGX / S68 | 20.75 | ▼ −1.14% | ▼ −17.98% | ▲ +18.37% |
+| DBS / D05 | 78.56 | ▲ +0.73 (+0.94%) | ▼ -0.11% | Unavailable |
+| OCBC / O39 | 32.20 | ▲ +0.32 (+1.00%) | ▼ -0.22% | Unavailable |
+| UOB / U11 | 43.72 | ▲ +0.66 (+1.53%) | ▲ +4.07% | Unavailable |
+| Singtel / Z74 | 4.25 | ▼ -0.02 (-0.47%) | ▼ -5.97% | Unavailable |
+| SGX / S68 | 21.04 | ▲ +0.29 (+1.40%) | ▼ -16.84% | Unavailable |
 
-**At a glance:** UOB is the only name above its 30-day reference. All five are above their year-earlier closing prices; SGX has the sharpest 30-day decline. These comparisons do not establish the cause of a move.
+**Method:** 30D = (6 October closing price ÷ 4 September closing price − 1) × 100. The calendar reference is 6 September, a Sunday. Reference prices are DBS 78.65, OCBC 32.27, UOB 42.01, Singtel 4.52 and SGX 25.30. Provider close and adjusted-close fields coincide at both endpoints. These are price comparisons, not independently reconstructed dividend-reinvested total returns. The 1Y reference should be **6 October 2025**; that day's comparable series could not be retrieved. Yesterday's 3 October references are not substituted.
 
-**How to read 30D / 1Y:** price change, excluding dividends, calculated as (latest close ÷ reference close − 1) × 100. The latest session is 5 October 2026. Reference dates are **4 September 2026** and **3 October 2025**, the last sessions on or before 5 September 2026 and 5 October 2025. These are calendar periods, not 30 trading days. The table uses provider closing-price fields consistently, not dividend-adjusted fields. Separate corporate-action reconciliation was not completed; returns should not be read as investor total returns.
+**DBS:** the daily gain brings its price close to the September reference, but the 30D comparison remains slightly negative. **OCBC:** its advance similarly leaves the month comparison near flat. **UOB:** the strongest daily bank gain also leaves it above its 30D reference. **Singtel:** the daily decline contrasts with bank strength. **SGX:** Tuesday's rebound leaves a substantial month decline; price history alone does not establish its cause.
 
-| Reference close · SGD | 4 Sep 2026 | 3 Oct 2025 |
-|---|---:|---:|
-| DBS / D05 | 78.65 | 52.86 |
-| OCBC / O39 | 32.27 | 16.83 |
-| UOB / U11 | 42.01 | 35.25 |
-| Singtel / Z74 | 4.52 | 4.25 |
-| SGX / S68 | 25.30 | 17.53 |
-
-**Data:** current and 30D dated rows: [DBS](https://stockanalysis.com/quote/sgx/D05/history/) · [OCBC](https://stockanalysis.com/quote/sgx/O39/history/) · [UOB](https://stockanalysis.com/quote/sgx/U11/history/) · [Singtel](https://stockanalysis.com/quote/sgx/Z74/history/) · [SGX](https://stockanalysis.com/quote/sgx/S68/history/). Year-earlier rows: [DBS](https://sg.finance.yahoo.com/quote/D05.SI/history/) · [OCBC](https://sg.finance.yahoo.com/quote/O39.SI/history/) · [UOB](https://sg.finance.yahoo.com/quote/U11.SI/history/) · [Singtel](https://sg.finance.yahoo.com/quote/Z74.SI/history/) · [SGX](https://sg.finance.yahoo.com/quote/S68.SI/history/). SGX’s 20.75 close and −1.14% daily move were corroborated by [Investing.com](https://cn.investing.com/equities/singapore-exchange-historical-data); this replaces the earlier conflicting figure.
+Dated rows: [DBS](https://stockanalysis.com/quote/sgx/D05/history/) · [OCBC](https://stockanalysis.com/quote/sgx/O39/history/) · [UOB](https://stockanalysis.com/quote/sgx/U11/history/) · [Singtel](https://stockanalysis.com/quote/sgx/Z74/history/) · [SGX](https://stockanalysis.com/quote/sgx/S68/history/). Provider observation labels: 6 October, 5:04–5:15 PM SGT; historical closing rows are used rather than live panels.
 
 ### Other Singapore Stocks & REITs
 
-Singapore Airlines, CapitaLand Investment, CICT and CapitaLand Ascendas REIT remain on the monitoring list. Their prices and filing checks were not refreshed as part of this section update.
+| Company / ticker | 6 Oct close · SGD | Daily |
+|---|---:|---|
+| Singapore Airlines / C6L | 6.70 | ▲ +0.04 (+0.60%) |
+| CapitaLand Investment / 9CI | 2.45 | ▼ -0.02 (-0.81%) |
+| CICT / C38U | 2.25 | ▲ +0.01 (+0.45%) |
+| CapitaLand Ascendas REIT / A17U | 2.22 | 0.00 (0.00%) |
+
+Sources: [SIA](https://stockanalysis.com/quote/sgx/C6L/history/) · [CLI](https://stockanalysis.com/quote/sgx/9CI/history/) · [CICT](https://stockanalysis.com/quote/sgx/C38U/history/) · [Ascendas](https://stockanalysis.com/quote/sgx/A17U/history/). No new earnings or dividend dates are asserted without an accompanying verified filing.
 
 ## PRECIOUS METALS · SPOT, USD/TROY OZ
 
-**Historical reported snapshot, not a live feed.** Gold was US$4,139.89 at 18:04 UTC on 5 October, equivalent to **2:04 AM SGT on 6 October**, down a reported 0.1%. The same Reuters report gives silver US$61.09 (+1.2%), platinum US$1,722.15 (+1.4%) and palladium US$1,176.33 (+0.7%); individual observation times are unspecified.
+| Metal | Reported spot snapshot | Reported session movement | 30D / 1Y |
+|---|---:|---|---|
+| Gold / XAU | 4,168.33 | ▲ +0.7% | Unavailable |
+| Silver / XAG | 61.56 | ▲ +0.8% | Unavailable |
+| Platinum / XPT | 1,704.85 | ▼ -1.0% | Unavailable |
+| Palladium / XPD | 1,172.80 | Unchanged | Unavailable |
 
-Reuters described a balance between dollar/yield pressure and reduced expectations of an October Fed increase. Absolute movements, comparable daily reference prices and 30D/1Y spot returns are unavailable. Futures figures are excluded. [Reuters, 5 October report](https://www.reuters.com/world/india/gold-gains-october-fed-rate-hike-prospects-fade-2026-10-05/)
+Gold observation: **6 October, 18:12 UTC = 7 October, 2:12 AM SGT**. Other metals' individual times and comparable reference prices are unspecified; their percentages are attributed reported moves. Absolute changes cannot be reconstructed reliably. Reuters links gold's rise to a softer dollar and easing yields. [Reuters · 6 October](https://www.reuters.com/world/india/gold-inches-lower-firmer-dollar-higher-yields-weigh-2026-10-06/). Futures are excluded.
 
 ## GLOBAL MARKETS · LAST CLOSE
 
-**PREVIOUS CLOSE · 5 October 2026 · Index points.** US cash session ended 4:00 AM SGT on 6 October; Hong Kong’s session was completed on 5 October.
-
-| Index | Last close | Daily | 30D | 1Y |
+| Index · points | 6 Oct completed close | Daily | 30D | 1Y |
 |---|---:|---|---|---|
-| S&P 500 | 7,773.95 | ▲ +0.66% | ▲ +0.72% | ▲ +15.76% |
-| Nasdaq 100 | 31,076.44 | ▲ +0.87% | ▲ +5.19% | ▲ +25.38% |
-| Hang Seng | 24,040.34 | ▲ +0.28% | ▼ −6.28% | ▼ −11.42% |
+| S&P 500 | 7,818.93 | ▲ +44.98 (+0.58%) | Unavailable | Unavailable |
+| Nasdaq 100 | 31,224.47 | ▲ +148.03 (+0.48%) | Unavailable | Unavailable |
+| Hang Seng | 24,280.56 | ▲ +240.22 (+1.00%) | ▼ -5.34% | Unavailable |
 
-**At a glance:** Nasdaq 100 has the strongest 30D and 1Y price performance in this comparison. Hang Seng’s modest daily rebound leaves it below both historical references. Nasdaq 100 is distinct from Nasdaq Composite.
+US cash session ended **7 October, 4:00 AM SGT**; Hong Kong closed on 6 October. [AP US close](https://apnews.com/article/267ca73e15e09f7e8deb5f6076405f48) · [Nasdaq 100 dated history](https://ca.investing.com/indices/nq-100-historical-data) · [Hang Seng history](https://stockinvest.us/stock-price/%5EHSI).
 
-**Method:** price-index returns, excluding dividends. Reference closes use **4 September 2026** for 30D and **3 October 2025** for 1Y. Formula: (5 October close ÷ reference close − 1) × 100.
+**Reconciliation:** AP's S&P cash close is used; a derived Investing.com row gives 7,819.04 instead. Nasdaq's official page shows inconsistent change/previous-close fields, so the dated history is used with the change calculated from 31,076.44. Nasdaq 100 is not Nasdaq Composite.
 
-| Reference · points | 4 Sep 2026 | 3 Oct 2025 |
-|---|---:|---:|
-| S&P 500 | 7,718.60 | 6,715.79 |
-| Nasdaq 100 | 29,544.15 | 24,785.52 |
-| Hang Seng | 25,650.87 | 27,140.92 |
+Hang Seng's 30D reference is **4 September, 25,650.87**, the last session before 6 September. This is a price-index return. Other required historical endpoints were not obtained from full accessible tables.
 
-**Sources:** [S&P 500 latest close, AP](https://apnews.com/article/7f89624b604f25f313502c77d4d0b010), [4 September close, AP](https://apnews.com/article/ebc11cfa2cf8baf4491bf3d4199c1d74), [S&P history](https://uk.finance.yahoo.com/quote/%5EGSPC/history/); [Nasdaq official 5 October level](https://indexes.nasdaqomx.com/Index/History/NDX), [Nasdaq historical references](https://finance.yahoo.com/quote/%5ENDX/history/), [1Y reference](https://ca.finance.yahoo.com/quote/%255ENDX/history/); [Hang Seng close](https://ca.investing.com/indices/hang-sen-40-historical-data), [30D reference](https://finance.yahoo.com/quote/%5EHSI/history/?frequency=1d), [1Y reference](https://ca.finance.yahoo.com/quote/%5EHSI/history/), and [Reuters session direction](https://www.reuters.com/world/asia-pacific/hong-kong-stocks-tick-down-thin-trade-property-financials-drag-2026-10-05/).
+AP reports record closes for S&P 500 and Nasdaq Composite, supported by earnings optimism and lower yields; Constellation's Google electricity agreement was a notable story. The Composite's supporting close was 27,599.79, not a replacement for Nasdaq 100.
 
-**Data reconciliation:** a derived S&P quote differed from the cash close; AP’s completed-session figure is used. An FT Hang Seng row differed from the reported close; 24,040.34 is supported by the dated historical table and the independently reported +0.28% session move. No live panels are used.
-
-**Singapore implication · Analysis:** stronger US technology prices may support sentiment, while Hong Kong’s weaker longer-term performance points to regional divergence. Price performance alone is not a forecast for Singapore shares.
+Reuters reports US 10-year yield **5.28%** and Brent settlement around **US$100.60/bbl**, WTI **US$89.44/bbl**, in its 6 October closing report; exact yield observation time is unspecified. [Reuters](https://www.reuters.com/world/china/global-markets-global-markets-2026-10-06/). **Analysis:** energy and funding costs remain relevant to Singapore margins even when equities rise.
 
 ## ON THE RADAR
 
-### PROPERTY · SINGAPORE
-### Rising prices meet falling transaction volumes
+### ENERGY · SINGAPORE
+### Pulau Tekong enters the long-term power-planning map
 
-**DATED BACKGROUND · Released 1 October.** URA’s Q3 flash estimate shows private-home prices rising **1.4% quarter-on-quarter**, compared with 0.5% in Q2. Transaction volume fell about **30%**. Prices outside the central region increased 2.2%, while core-central non-landed prices declined 0.1%.
+EMA announced on 6 October that it will study an energy infrastructure cluster on reclaimed land at Pulau Tekong. The proposed study covers approximately **200 hectares**, potentially accommodating hydrogen-ready gas generation, an LNG terminal and low-carbon technologies.
 
-The government’s confirmed-list private housing supply totals **9,320 units for 2026**, according to the release. URA says the flash estimate uses transactions available up to mid-September and can change in the final statistics. This is not a fresh daily price index.
+A consultancy tender was published on 5 October. Appointment is expected by mid-2027, and the study could take about two years. This is feasibility planning, not approval to construct plants or evidence of a commissioned project. [EMA · 6 October](https://www.ema.gov.sg/news-events/news/media-releases/2026/ema-to-commission-study-into-potential-energy-infrastructure-cluster-on-pulau-tekong)
 
-**WHY IT MATTERS:** a higher price index alongside fewer transactions offers a different picture from broad-based volume expansion. It does not, by itself, demonstrate stronger affordability or demand across every segment.
+**WHY IT MATTERS · Analysis:** land, fuel infrastructure and generation capacity must be considered together. Businesses planning electricity-intensive operations should distinguish long-term options from near-term available capacity. The announcement does not establish a project budget or procurement pipeline for equipment vendors.
 
-**WATCH NEXT:** the complete Q3 release on **23 October**. Compare revisions, volumes and regional differences before drawing conclusions. [URA, 1 October](https://www.ura.gov.sg/news/media/pr26-69/)
+**WATCH NEXT:** the consultancy award, study scope and eventual feasibility findings. Supplier opportunities remain conditional on later decisions.
 
 ## DIVIDENDS & INCOME
 
 ### CPF INTEREST · Q4 2026
 
-| Account | Official annual base rate | Period |
+| Account | Annual base rate | Applicable period |
 |---|---:|---|
-| Ordinary Account | 2.5% | 1 October–31 December 2026 |
-| Special / MediSave / Retirement | 4% | 1 October–31 December 2026 |
+| Ordinary Account | 2.5% | 1 Oct–31 Dec 2026 |
+| Special / MediSave / Retirement | 4.0% | 1 Oct–31 Dec 2026 |
 
-The OA rate is subject to a legislated 2.5% minimum. The SMRA floor is 4%; CPF’s page states that it will extend through **31 December 2027**. Extra interest applies to eligible combined balances, with up to S$20,000 of OA included. Account availability and extra-interest eligibility differ; the base rates should not be presented as everyone’s effective return. [CPF, page updated 15 September](https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/earning-attractive-interest)
+CPF confirms OA's legislated 2.5% minimum and extension of the SMRA 4% floor through **31 December 2027**. Extra interest applies to eligible combined balances, with OA included up to S$20,000; account availability and age-dependent eligibility matter. Headline “up to” rates are not the base rate earned on every dollar. [CPF · updated 15 September](https://www.cpf.gov.sg/member/growing-your-savings/earning-higher-returns/earning-attractive-interest)
 
-### Singapore Savings Bonds and six-month T-bills
+### Singapore Savings Bonds / six-month T-bills
 
-MAS’s current SSB issue-rate panel could not be extracted. Issue code, year-one rate, ten-year average annual return, deadline and previous-issue comparison are **unavailable as verified official figures**. Earlier tracker values are excluded. [MAS SSB page](https://www.mas.gov.sg/bonds-and-bills/singapore-savings-bonds)
+**Official current figures unavailable.** MAS pages were retrieved, but the issue-rate and six-month auction rows were absent from accessible output. SSB issue code, first-year return, ten-year average annual return, deadline and previous-issue comparison therefore remain unverified. The next six-month T-bill issue, auction date and latest completed cut-off yield are also unavailable. No future auction yield is forecast.
 
-The next six-month T-bill’s official issue/auction dates and latest completed auction yield were not verified. No future yield is inferred. These gaps prevent a reliable current product comparison.
+[MAS SSB](https://www.mas.gov.sg/bonds-and-bills/singapore-savings-bonds) · [Official SSB rate database](https://eservices.mas.gov.sg/statistics/fdanet/stepupinterest.aspx) · [MAS issuance calendar](https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar)
 
 ## THIS WEEK
 
-Only one future event in this week was supported by the retrieved reporting: **Wednesday, 7 October — September FOMC minutes**, with the release time not independently confirmed. Watch for policy deliberations; the minutes describe a past meeting and do not constitute a new decision. [Reuters, 5 October](https://www.reuters.com/world/india/gold-gains-october-fed-rate-hike-prospects-fade-2026-10-05/)
+| When · SGT | Event | Watch |
+|---|---|---|
+| Wed 7 Oct, 4:00 PM | First October COE bidding closes | New premiums; unavailable at morning cutoff |
+| Wed 7 Oct US date; time not independently confirmed | September FOMC minutes | Past policy deliberations, not a new decision |
 
-**LATER THIS MONTH:** URA’s full Q3 statistics and Signify’s Q3 results are both scheduled for **Friday, 23 October**. They are outside this week. [URA](https://www.ura.gov.sg/news/media/pr26-69/) · [Signify calendar](https://www.signify.com/global/our-company/investors/calendar-events)
+[LTA official 2026 schedule](https://onemotoring.lta.gov.sg/content/dam/onemotoring/pdf/Circulars%20to%20ESAs/2025/Circular%2021-2025_COE%20Bidding%20Schedule%20for%20Year%202026.pdf) · [Reuters minutes preview](https://www.reuters.com/world/india/gold-inches-lower-firmer-dollar-higher-yields-weigh-2026-10-06/).
+
+**LATER THIS MONTH:** URA full Q3 property statistics and Signify Q3 results are scheduled for **23 October**. They are not this-week events. [URA](https://www.ura.gov.sg/news/media/pr26-69/) · [Signify](https://www.signify.com/global/our-company/investors/calendar-events). Only verified events are listed.
 
 ## WORLD / SINGAPORE
 
-<p class="section-intro">The developments to understand, their relevance to Singapore and what to follow next. Dates distinguish overnight news from background.</p>
-<div class="editorial-columns"><div class="editorial-column"><h3 class="region-heading">World</h3><article class="dispatch-story"><div class="story-label">MARKETS · 5 OCTOBER</div><h4>US technology shares lift the close</h4><p>The S&P 500 gained 0.66%; Nasdaq Composite advanced 1.05%. Reuters linked the session to gains in Nvidia and Microsoft and lower oil prices.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: global technology sentiment is relevant to Singapore electronics and data-centre exposure.</p></div><p class="story-watch"><strong>Watch next</strong> · Whether earnings support recent market gains.</p><a class="story-source" href="https://www.reuters.com/world/europe/wall-st-futures-dip-tech-stocks-take-breather-2026-10-05/">Reuters · 5 October ↗</a></article><article class="dispatch-story"><div class="story-label">ASIA · 5 OCTOBER</div><h4>Hong Kong edges higher in holiday trade</h4><p>Reuters reported a roughly 0.3% Hang Seng gain as AI shares offset property weakness. Mainland financial markets are closed from 1–7 October.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: holiday-thinned trading provides a limited test of wider China sentiment.</p></div><p class="story-watch"><strong>Watch next</strong> · Mainland trading resumes on 8 October; assess whether the move broadens.</p><a class="story-source" href="https://www.reuters.com/world/asia-pacific/hong-kong-stocks-tick-down-thin-trade-property-financials-drag-2026-10-05/">Reuters · 5 October ↗</a></article></div><div class="editorial-column"><h3 class="region-heading">Singapore</h3><article class="dispatch-story"><div class="story-label">AIR QUALITY · 5 OCTOBER, 6 PM</div><h4>Haze remains a planning concern</h4><p>Official evening readings showed 24-hour PSI of 94–122 and one-hour PM2.5 of 75–97 µg/m³. Morning regional readings were not independently retrieved.</p><div class="story-impact"><strong>Why it matters</strong><p>MSS advises checking one-hour PM2.5 for immediate outdoor activity and the PSI forecast for next-day planning.</p></div><p class="story-watch"><strong>Watch next</strong> · Fresh NEA readings and whether smoke continues drifting towards Singapore.</p><a class="story-source" href="https://www.weather.gov.sg/haze-situation-update-05-october-2026/">MSS · Official advisory ↗</a></article><article class="dispatch-story"><div class="story-label">HOUSING · BACKGROUND, 1 OCTOBER</div><h4>Prices rise while transactions fall</h4><p>URA’s Q3 flash estimate showed private-home prices up 1.4% quarter on quarter; transaction volume fell about 30%.</p><div class="story-impact"><strong>Why it matters</strong><p>Analysis: rising prices do not imply broad volume growth. The flash estimate can be revised.</p></div><p class="story-watch"><strong>Watch next</strong> · Full Q3 statistics on 23 October.</p><a class="story-source" href="https://www.ura.gov.sg/news/media/pr26-69/">URA · Official release ↗</a></article></div></div>
-<p class="coverage-note"><strong>Coverage note:</strong> this is a focused verified selection. Currency quotes, fresh COE results, electricity tariffs and additional geopolitical developments were not refreshed for this update.</p>
+<div class="editorial-columns"><div class="editorial-column"><h3 class="region-heading">World</h3><article class="dispatch-story"><div class="story-label">MARKETS · 6 OCTOBER</div><h4>Equities advance as yields ease</h4><p>Reuters reports a recovery in risk appetite alongside a retreat in long-dated yields.</p><div class="story-impact"><strong>Why it matters · Analysis</strong><p>Funding costs and equity sentiment can move differently; watch both when assessing business conditions.</p></div><p class="story-watch"><strong>Watch next</strong> · Earnings and bond-market stability.</p><a href="https://www.reuters.com/world/china/global-markets-global-markets-2026-10-06/">Reuters · closing report</a></article></div><div class="editorial-column"><h3 class="region-heading">Singapore</h3><article class="dispatch-story"><div class="story-label">AIR QUALITY · 6 OCTOBER, 5 PM</div><h4>Haze range moves higher</h4><p>MSS reported 24-hour PSI 102–135 and one-hour PM2.5 73–103 µg/m³. Smoke from southern Sumatra and West Kalimantan was drifting towards Singapore.</p><div class="story-impact"><strong>Why it matters</strong><p>Use current one-hour PM2.5 for immediate outdoor decisions and the PSI forecast for next-day planning.</p></div><p class="story-watch"><strong>Watch next</strong> · New regional readings; MSS forecasts continued haze. Morning region-by-region data were not retrieved.</p><a href="https://www.weather.gov.sg/haze-situation-update-06-october-2026/">MSS · official evening advisory</a></article><article class="dispatch-story"><div class="story-label">HOUSING · DATED BACKGROUND, 1 OCTOBER</div><h4>Price growth accompanies lower volumes</h4><p>URA's Q3 flash estimate shows prices up 1.4% quarter on quarter and transactions down about 30%.</p><div class="story-impact"><strong>Why it matters · Analysis</strong><p>A price index alone does not establish broad-based demand growth.</p></div><p class="story-watch"><strong>Watch next</strong> · Final statistics on 23 October; flash estimates can change.</p><a href="https://www.ura.gov.sg/news/media/pr26-69/">URA · official release</a></article><article class="dispatch-story"><div class="story-label">TRANSPORT · TODAY</div><h4>COE exercise closes this afternoon</h4><p>The official calendar schedules the close at 4 PM. Results are still future information at the cutoff.</p><div class="story-impact"><strong>Why it matters · Analysis</strong><p>Vehicle buyers and fleet operators should use completed results when assessing costs.</p></div><p class="story-watch"><strong>Watch next</strong> · Official premiums and category comparisons.</p><a href="https://onemotoring.lta.gov.sg/content/onemotoring/home/buying/coe-open-bidding.html">LTA</a></article></div></div>
+
+**Currencies:** USD/SGD (SGD per US$1) and SGD/MYR (MYR per S$1) were not verified with timestamped comparable quotes. HDB, electricity tariffs, fresh MAS policy and additional geopolitical stories are omitted where current verification was incomplete.
 
 ## INDUSTRY PULSE · LIGHTING & ELECTRICAL
 
 ### INDUSTRY · ACUITY INC. (NYSE: AYI)
-### Group growth masks pressure in lighting
+### Lighting margins remain the more revealing signal
 
-**DATED BACKGROUND · 1 October results.** Acuity reported fiscal Q4 sales of approximately **US$1.2 billion**, up 2.9%, and diluted EPS of **US$5.63**, up 56%. Adjusted EPS was **US$5.77**, up 11%. Its lighting segment’s sales declined **0.4%**, whereas Intelligent Spaces sales increased **16.6%**.
+**DATED BACKGROUND · 1 October results, freshly checked.** Acuity's fiscal Q4 diluted EPS was US$5.63, up 56%; adjusted EPS was US$5.77, up 11%. Lighting sales fell 0.4% to US$958.7 million and its adjusted operating margin declined 130 basis points to 18.8%. Intelligent Spaces sales rose 16.6% to US$297.6 million.
 
-Lighting’s adjusted operating margin fell **130 basis points to 18.8%**. The release also identifies tariff refunds and special charges and says the preliminary results remain subject to completion of the audit. Headline GAAP profit growth therefore requires context.
+These preliminary results remain subject to the completed audit. GAAP and adjusted measures should be read separately. [Company release via GlobeNewswire · 1 October](https://www.globenewswire.com/fr/news-release/2026/10/01/3372686/28689/en/acuity-reports-fiscal-2026-fourth-quarter-and-full-year-results.html)
 
-**WHY IT MATTERS:** the stronger group result does not establish a uniform recovery in traditional lighting demand. For suppliers and building-technology teams, segment performance is more informative than the consolidated headline alone. [Acuity, 1 October](https://acuitybrands.gcs-web.com/news-releases/news-release-details/acuity-reports-fiscal-2026-fourth-quarter-and-full-year-results)
+**WHY IT MATTERS · Analysis:** stronger group earnings do not demonstrate uniform recovery in lighting. For distributors and project suppliers, segment demand and margins offer a more useful comparison.
 
-### Signify · Upcoming results
+### Signify · Results watch
 
-Signify’s official calendar lists **23 October** for Q3 results. No material fresh daily Signify announcement was independently verified. Watch demand, margins and guidance when results are released; no outcome is predicted. [Signify calendar](https://www.signify.com/global/our-company/investors/calendar-events)
-
-No comprehensive daily check of all other monitored electrical companies was completed.
+Its official calendar confirms Q3 results on **23 October**. No material new daily Acuity or Signify development was verified. The dated Acuity comparison is retained because it helps frame the sector's next results. No fresh claims are made for the other monitored electrical companies. [Signify calendar](https://www.signify.com/global/our-company/investors/calendar-events)
 
 ## TECH & AI
 
-### TECH · CONTENT PROVENANCE
-### OpenAI sets out a phased text-watermark approach
+### TECH · ENTERPRISE AGENTS
+### Atlassian connects models with organisational context
 
-**NEW · 5 October announcement.** OpenAI says global API customers can opt into text watermarking for selected models, with the API setting off by default. Eligible ChatGPT and Codex text output in the EU is due to receive invisible watermarks over coming weeks. Detector access initially requires approval.
+**NEW · 6 October.** OpenAI and Atlassian announced an expanded partnership using OpenAI models across Atlassian's platform and Rovo. Atlassian's Teamwork Graph connects project and organisational context; OpenAI says more than 3,000 Atlassian developers already use Codex.
 
-The company describes a statistical signal in word choices. It acknowledges false positives, false negatives and lower reliability for short, constrained or edited passages. Detection is not a certificate that content is accurate.
+The companies are exploring deeper Jira integrations for assigning tasks to agents, tracking progress and reviewing results. That language describes work in development, not universal availability of every proposed feature. [OpenAI · 6 October](https://openai.com/index/atlassian-partnership/)
 
-**WHY IT MATTERS:** Singapore software teams serving EU users should check product-specific rollout details and provenance requirements. A watermark should be treated as one signal alongside source verification and human review. This is an implementation implication, not legal advice. [OpenAI, 5 October](https://openai.com/index/eu-text-provenance/)
+**WHY IT MATTERS · Analysis:** useful enterprise agents need access to the right records as well as capable models. For Singapore software teams, the practical test is whether an agent retrieves permitted information, records its actions and returns reviewable work. A school-system assistant summarising admissions exceptions should preserve staff permissions and distinguish retrieved facts from generated explanations.
 
-### TECH · BUSINESS MODELS
-### Visual advertising remains a planned test
+**WATCH NEXT:** availability, permissions and measurable effects on delivery time. The announcement supplies no independently verified productivity percentage.
 
-OpenAI separately announced a visual ad format intended for testing during image generation in the US later in October. It says ads will be labelled and separate from generated images. The announcement is a test plan, not evidence of a general Singapore launch or measured commercial results. [OpenAI, 5 October](https://openai.com/index/new-chatgpt-ads-format-and-measurement/)
+### TECH · RESEARCH
+
+OpenAI published mathematical results from an internal frontier model, including some Lean formalizations and methodological information. Release of research results does not mean the model itself is generally available. [OpenAI · 6 October](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+
+### TECH · PRODUCT
+
+The 6 October ChatGPT release notes announce audio uploads for paid subscriptions and workspaces, with availability varying by settings, region and client. Transcripts may contain errors. **Analysis:** meeting and lecture summaries need human checking before becoming authoritative records. [Official release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)
 
 ## TODAY'S LINE
 
-**Original editorial line:** A useful briefing makes uncertainty visible before it makes a conclusion persuasive.
+**Original editorial line:** A record close tells us where prices finished; careful evidence tells us what deserves attention next.
 
 ## SOURCES & DATA
 
-Sources actually retrieved are linked beside the claims: Investing.com’s dated STI table; Stock Analysis historical rows; Reuters’s 5 October metals and US closing reports; URA’s 1 October flash estimate; CPF’s interest page updated 15 September; MSS’s 5 October evening advisory; Acuity’s 1 October release; Signify’s calendar; and OpenAI’s 5 October announcements.
+Sources actually used are linked beside claims. Market dates: SGX and Hong Kong 6 October; US 6 October session ending 7 October SGT. Stock Analysis dated rows supply Singapore stock closes and 4 September references. AP supplies the reconciled S&P cash close. Investing.com supplies STI and Nasdaq 100 dated rows; StockInvest supplies Hang Seng history.
 
-MAS’s SSB page was retrieved, but its current issue panel did not yield rate data. Inaccessible CNA and earlier market links were not treated as verified evidence. Reuters pages display initial publication times alongside updated closing text without a precise last-update time; the observations used occurred before the cutoff.
+Official releases: MSS 6 October, 5 PM observations; EMA 6 October; CPF updated 15 September; URA 1 October flash estimate; LTA 2026 bidding schedule; Signify financial calendar; Acuity 1 October company release distributed by GlobeNewswire; OpenAI 6 October announcements.
 
-The prior 6 October edition was read for comparison. A reliable full comparison with the 5 October archive was not completed. This refresh removes unsupported carry-forward figures and adds verified permanent industry and AI sections.
+Reuters reports are dated 6 October, with updated closing text; precise last-update times are not exposed. All quoted observations precede the cutoff. Rate-limited historical requests and missing MAS dynamic tables prevented full verification of several requested fields. Earlier briefings are comparison material, not substitutes for fresh evidence.
 
-COMPILED FROM OPEN REPORTING · GENERATED 6 OCTOBER 2026, 9:34 AM SGT
+COMPILED FROM OPEN REPORTING · GENERATED 7 OCTOBER 2026, 8:01 AM SGT
 
 Information is provided for general informational purposes and does not constitute investment advice.
