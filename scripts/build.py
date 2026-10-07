@@ -36,6 +36,7 @@ td:before{content:attr(data-label);font-weight:700;color:#596269;font-size:12px}
 
 @media print{body{background:white}main{max-width:none}.table-wrap{break-inside:avoid}.dispatch-story{break-inside:avoid}h4{break-after:avoid}.section{padding:12px}.masthead .brand{color:#98752e}}
 @media print{body{font-size:10pt;line-height:1.4}.dispatch-story p{font-size:10pt}.section{padding:8px;margin-bottom:10px}.table-wrap{margin:10px 0;break-inside:auto}p{margin-bottom:8px}h3{font-size:16pt}h2{display:block;break-inside:avoid;break-after:avoid}.icon{display:inline-block;vertical-align:middle;margin-right:10px}.footnote{display:none}}
+@media print{.sources{font-size:9pt;line-height:1.3}.sources p{margin-bottom:5px}.sources th,.sources td{padding:5px 6px;font-size:8pt}}
 '''
 
 def icon(title):
@@ -157,7 +158,7 @@ def render(text, archive=False):
         body=re.sub(r'<td>([+]\d[^<]*)</td>',r'<td class="up">\1</td>',body)
         body=re.sub(r'<td>([−-]\d[^<]*)</td>',r'<td class="down">\1</td>',body)
         body=re.sub(r'<td>(Conflicting|Unverified)</td>',r'<td><span class="status">\1</span></td>',body)
-        klass='section overview' if '60-second' in heading else ('section tech' if 'TECH & AI' in heading else 'section')
+        klass='section overview' if '60-second' in heading else ('section tech' if 'TECH & AI' in heading else ('section sources' if 'SOURCES & DATA' in heading else 'section'))
         sections.append(f'<section class="{klass}" id="{sid}"><h2>{icon(heading)}{html.escape(heading)}</h2>{body}</section>')
         links.append(f'<a href="#{sid}">{html.escape(heading)}</a>')
     nav='<a class="button" href="latest.pdf">Download PDF</a><a class="button secondary" href="archive.html">Past briefings</a>'
