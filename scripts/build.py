@@ -1,5 +1,7 @@
 from pathlib import Path
-import re, html
+import re, html, json
+from datetime import date, datetime, timedelta
+from decimal import Decimal, ROUND_HALF_UP
 import markdown
 from playwright.sync_api import sync_playwright
 
@@ -33,7 +35,7 @@ td:before{content:attr(data-label);font-weight:700;color:#596269;font-size:12px}
 @media print{.editorial-columns{display:block}.dispatch-story{padding:12px;margin-bottom:12px}.dispatch-story h4{font-size:15pt}.dispatch-story p{font-size:10pt}.story-label{font-size:8pt}.story-source{font-size:8pt}.region-heading{break-after:avoid}.coverage-note{font-size:9pt}}
 
 @media print{body{background:white}main{max-width:none}.table-wrap{break-inside:avoid}.dispatch-story{break-inside:avoid}h4{break-after:avoid}.section{padding:12px}.masthead .brand{color:#98752e}}
-@media print{body{font-size:10pt;line-height:1.45}.dispatch-story p{font-size:10pt}.section{padding:10px;margin-bottom:12px}.table-wrap{margin:10px 0}h3{font-size:16pt}h2{display:block;break-inside:avoid;break-after:avoid}.icon{display:inline-block;vertical-align:middle;margin-right:10px}.footnote{display:none}}
+@media print{body{font-size:10pt;line-height:1.4}.dispatch-story p{font-size:10pt}.section{padding:8px;margin-bottom:10px}.table-wrap{margin:10px 0;break-inside:auto}p{margin-bottom:8px}h3{font-size:16pt}h2{display:block;break-inside:avoid;break-after:avoid}.icon{display:inline-block;vertical-align:middle;margin-right:10px}.footnote{display:none}}
 '''
 
 def icon(title):
@@ -50,6 +52,84 @@ def icon(title):
     if '60-second' in title: key='overview'
     if '3 things' in title: key='takeaways'
     return '<span class="icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#96722a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+paths[key]+'</svg></span>'
+
+def verified_history(text):
+    """Fail closed: all historical numbers must come from evidence tokens.
+
+    Authors supply <!-- RETURN_EVIDENCE {key: record} --> and
+    {{RETURN:key}}. The visible audit is generated from that same record.
+    Provider independence and corporate-action audits are editorial checks;
+    the build requires their recorded results, not a guessed adjustment.
+    """
+    found = re.search(r'<!-- RETURN_EVIDENCE\s+(.*?)\s+-->', text, re.S)
+    evidence = json.loads(found.group(1)) if found else {}
+    clean = re.sub(r'<!-- RETURN_EVIDENCE\s+.*?\s+-->', '', text, flags=re.S)
+    # Check every Markdown table column explicitly labelled 30D or 1Y.
+    columns=[]
+    for line in clean.splitlines():
+        if line.startswith('|'):
+            cells=[c.strip() for c in line.strip('|').split('|')]
+            if any(re.search(r'\b(?:30D|1Y)\b',c) for c in cells):
+                columns=[i for i,c in enumerate(cells) if re.search(r'\b(?:30D|1Y)\b',c)]
+            else:
+                for i in columns:
+                    if i < len(cells) and '%' in cells[i]:
+                        raise ValueError('Historical percentage must use a RETURN evidence token')
+        else:
+            columns=[]
+        plain=re.sub(r'\{\{RETURN:[\w.-]+\}\}', '', line)
+        if re.search(r'\b(?:30D|1Y)\b',plain) and re.search(r'[+−-]?\d+(?:\.\d+)?\s*%',plain):
+            raise ValueError('Unsupported inline historical percentage')
+    audit=[]
+    def replace(match):
+        key=match.group(1)
+        r=evidence.get(key)
+        if not r:
+            raise ValueError('Missing historical evidence: '+key)
+        for field in ('instrument','ticker','exchange','unit','period','field','methodology','return_type','cutoff','endpoint','reference','sessions','calendar_source','adjustment_audit','display_pct'):
+            if not r.get(field):
+                raise ValueError('Missing evidence field: '+field)
+        if r['period'] not in ('30D','1Y') or r['return_type'] not in ('PRICE RETURN','TOTAL RETURN PROXY'):
+            raise ValueError('Wrong return type or lookback')
+        if r['adjustment_audit'].get('resolved') is not True or not r['adjustment_audit'].get('source_urls'):
+            raise ValueError('Corporate-action / methodology audit unresolved')
+        cutoff=datetime.fromisoformat(r['cutoff'])
+        if cutoff.utcoffset() is None:
+            raise ValueError('Cutoff must contain timezone')
+        endpoint=r['endpoint']; reference=r['reference']
+        t=date.fromisoformat(endpoint['date'])
+        target=t-timedelta(days=30) if r['period']=='30D' else t.replace(year=t.year-1,day=28 if t.month==2 and t.day==29 else t.day)
+        if reference['target_date'] != target.isoformat():
+            raise ValueError('Lookback is not anchored to T')
+        sessions=sorted(date.fromisoformat(x) for x in r['sessions'])
+        if t not in sessions or date.fromisoformat(reference['date']) != max(x for x in sessions if x <= target):
+            raise ValueError('Reference is not last exchange session on/before target')
+        if not r.get('last_completed_session_confirmed'):
+            raise ValueError('Endpoint session has not been confirmed')
+        for row in (endpoint,reference):
+            completed=datetime.fromisoformat(row['completed_at'])
+            if completed.utcoffset() is None or completed > cutoff or completed.date() < date.fromisoformat(row['date']):
+                raise ValueError('Future or inconsistent endpoint')
+            if row['field'] != r['field'] or row['unit'] != r['unit'] or row['series'] != r['series']:
+                raise ValueError('Mixed fields, units or historical series')
+            a=Decimal(str(row['value'])); b=Decimal(str(row['corroborated_value']))
+            if a <= 0 or b <= 0 or abs(a-b)>Decimal(str(row['rounding_precision'])):
+                raise ValueError('Invalid or conflicting historical price')
+            if not row.get('source_url') or not row.get('corroboration_url') or not row.get('retrieved_at') or row.get('independence_confirmed') is not True:
+                raise ValueError('Independent endpoint evidence incomplete')
+            if row['source_url']==row['corroboration_url'] or row['provider_feed']==row['corroboration_feed']:
+                raise ValueError('Mirrors are not independent evidence')
+        calculated=(Decimal(str(endpoint['value']))/Decimal(str(reference['value']))-1)*100
+        rounded=calculated.quantize(Decimal('.01'),rounding=ROUND_HALF_UP)
+        if abs(Decimal(str(r['display_pct']))-calculated)>Decimal('.005'):
+            raise ValueError('Displayed historical return does not match calculation')
+        direction='▲' if rounded>=0 else '▼'
+        audit.append(f"<p><strong>{html.escape(r['instrument'])} {r['period']} · {r['return_type']}</strong>: T {endpoint['date']} = {endpoint['value']}; target {reference['target_date']}; actual {reference['date']} = {reference['value']}. {html.escape(r['methodology'])}. <a href=\"{html.escape(endpoint['source_url'],quote=True)}\">Series</a> · <a href=\"{html.escape(reference['corroboration_url'],quote=True)}\">Independent check</a>.</p>")
+        return f'<span class="badge {"up" if rounded>=0 else "down"}">{direction} {rounded:+.2f}%</span>'
+    clean=re.sub(r'\{\{RETURN:([\w.-]+)\}\}',replace,clean)
+    if audit:
+        clean+='\n\n## Historical return evidence\n\n'+''.join(audit)
+    return clean
 
 def render(text, archive=False):
     chunks=re.split(r'^##\s+(.+)$',text,flags=re.M)
@@ -85,18 +165,31 @@ def render(text, archive=False):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Singapore morning news, finance and markets with dated quotes and linked sources."><title>{html.escape(title)}</title><style>{CSS}</style></head><body><header class="masthead"><div class="brand">Harbour Dispatch / Singapore</div><h1>{html.escape(title)}</h1>{md(intro)}<nav class="toolbar" aria-label="Downloads and archive">{nav}</nav></header><main><nav class="contents" aria-label="Briefing sections">{''.join(links)}</nav>{''.join(sections)}<footer class="footnote">Sources are linked beside each item. Quote dates and verification limits appear with the relevant figures. All times are Singapore time unless stated otherwise.</footer></main></body></html>'''
 
 current=Path('briefings/current.md').read_text()
+edition_date=re.search(r'Information cutoff:.*?(\d{1,2} \w+ \d{4})',current)
+if edition_date:
+    dated=Path('briefings')/(datetime.strptime(edition_date.group(1),'%d %B %Y').strftime('%Y-%m-%d')+'.md')
+    if not dated.exists() or dated.read_text()!=current:
+        raise ValueError('Latest and dated edition must contain identical researched Markdown')
+current=verified_history(current)
 (ROOT/'index.html').write_text(render(current))
 entries=[]
 for item in sorted(Path('briefings').glob('????-??-??.md'),reverse=True):
     name=item.stem
-    (ROOT/(name+'.html')).write_text(render(item.read_text(),True))
+    edition=item.read_text()
+    if edition_date and name==dated.stem:
+        edition=verified_history(edition)
+    (ROOT/(name+'.html')).write_text(render(edition,True))
     entries.append(f'- [{name}]({name}.html)')
 (ROOT/'archive.html').write_text(render('# Previous briefings\n\n## Archive\n\n'+'\n'.join(entries),True))
 with sync_playwright() as p:
     browser=p.chromium.launch()
     tab=browser.new_page()
     tab.goto((ROOT/'index.html').resolve().as_uri())
+    for width in (375,768,1440):
+        tab.set_viewport_size({'width':width,'height':900})
+        if not tab.evaluate('document.documentElement.scrollWidth <= innerWidth'):
+            raise ValueError(f'Horizontal page overflow at {width}px')
+    tab.set_viewport_size({'width':1440,'height':1000})
     tab.pdf(path=str(ROOT/'latest.pdf'),format='A4',print_background=True,display_header_footer=True,header_template='<span></span>',footer_template='<div style="font-family:Arial;font-size:9px;width:100%;text-align:center;color:#586d7d">HARBOUR DISPATCH · Singapore Morning Briefing &nbsp; | &nbsp; <span class="pageNumber"></span> / <span class="totalPages"></span></div>',margin={'top':'16mm','bottom':'18mm','left':'14mm','right':'14mm'})
     browser.close()
 (ROOT/'.nojekyll').touch()
-
