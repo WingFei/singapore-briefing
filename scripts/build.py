@@ -33,6 +33,7 @@ td:before{content:attr(data-label);font-weight:700;color:#596269;font-size:12px}
 @media print{.editorial-columns{display:block}.dispatch-story{padding:12px;margin-bottom:12px}.dispatch-story h4{font-size:15pt}.dispatch-story p{font-size:10pt}.story-label{font-size:8pt}.story-source{font-size:8pt}.region-heading{break-after:avoid}.coverage-note{font-size:9pt}}
 
 @media print{body{background:white}main{max-width:none}.table-wrap{break-inside:avoid}.dispatch-story{break-inside:avoid}h4{break-after:avoid}.section{padding:12px}.masthead .brand{color:#98752e}}
+@media print{body{font-size:10pt;line-height:1.45}.dispatch-story p{font-size:10pt}.section{padding:10px;margin-bottom:12px}.table-wrap{margin:10px 0}h3{font-size:16pt}h2{display:block;break-inside:avoid;break-after:avoid}.icon{display:inline-block;vertical-align:middle;margin-right:10px}.footnote{display:none}}
 '''
 
 def icon(title):
