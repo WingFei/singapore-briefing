@@ -7,7 +7,7 @@ Prepared: **7 October 2026, 8:24 AM SGT**
 
 **Correction notice:** Previously displayed 30D returns for all five Singapore bellwethers and Hang Seng have been withdrawn following a reader-reported data error. All 30D and 1Y fields are unavailable until dated endpoints, adjustment methodology and independent corroboration pass verification. Associated historical trend commentary has also been removed. This correction does not assert replacement returns.
 
-**REFRESHED · Historical verification attempted again.** No numeric replacement return passed the independent-endpoint and adjustment checks. The correction remains a withdrawal, not a claim that returns have been corrected.
+**REFRESHED · Historical verification attempted again.** No numeric replacement return passed the independent-endpoint and adjustment checks. The correction remains a withdrawal.
 
 **Verified selection.** Market observations below predate the cutoff. Unavailable fields reflect retrieval limitations; they are not estimates. Yesterday's published Markdown was checked for comparison.
 
@@ -199,7 +199,7 @@ The common equity/index endpoint session is **6 October 2026**. The exact 30-cal
 
 Candidate observations above are **not approved return evidence**. Stock Analysis says its historical prices are adjusted for stock splits; its separate Adj. Close field differs on older dividend dates. This refresh does not mix those fields or assume dividend-adjusted prices represent price returns. Bonus/consolidation checks and independent historical rows remain incomplete. No historical performance is calculated from this candidate table.
 
-The build now rejects numeric historical returns without structured endpoint evidence and reproducible calculations. Approved returns must also publish their source prices, exact target and actual session dates, adjustment methodology and independent corroboration. Today's edition publishes **zero numeric 30D/1Y returns**.
+The build now rejects numeric historical returns without structured endpoint evidence and reproducible calculations. Today's edition publishes **zero numeric 30D/1Y returns**.
 
 Secondary tables inspected: [DBS](https://www.investing.com/equities/dbs-group-holdings-historical-data) · [UOB](https://www.investing.com/equities/united-overseas-bank-historical-data) · [Singtel](https://www.investing.com/equities/singapore-telecommunications-historical-data) · [SGX](https://www.investing.com/equities/singapore-exchange-historical-data). Retrieval: 7 October 2026, 8:24 AM SGT; observations retained only from before 8 AM.
 
