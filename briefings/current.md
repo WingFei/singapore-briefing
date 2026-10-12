@@ -1,27 +1,27 @@
 # Harbour Dispatch
 
 MORNING DISPATCH  
-**SUNDAY · 11 OCTOBER 2026 · SINGAPORE**  
-Information cutoff: **11 October 2026, 8:00 AM SGT**  
-Prepared: **11 October 2026, 8:03 AM SGT**
+**MONDAY · 12 OCTOBER 2026 · SINGAPORE**  
+Information cutoff: **12 October 2026, 8:00 AM SGT**  
+Prepared: **12 October 2026, 8:02 AM SGT**
 
-**DATA DISCIPLINE · CORRECTION NOTICE:** Markets in Singapore, Hong Kong and the United States were closed on Saturday. Market tables therefore use the latest fully completed sessions, dated Friday, 9 October. Every numeric 30D and 1Y return remains **withdrawn**: no Singapore equity, exact cash index or precious-metal series passed the required same-field, corporate-action and independent-corroboration gate at all three endpoints. Prior returns are not reused. “Unavailable” is not an estimate.
+**DATA DISCIPLINE · CORRECTION NOTICE:** Singapore, Hong Kong and US cash markets had not opened for Monday by the cutoff. Market tables therefore use the latest fully completed sessions, dated Friday, 9 October; Brent is separately labelled as a Monday futures observation. Every numeric 30D and 1Y return remains **withdrawn** because the required same-field, corporate-action and independent-corroboration gate was not met at all three endpoints. Prior returns are not reused. “Unavailable” is not an estimate.
 
 ## 60-second overview
 
-- **Haze improved, but the alert remains.** At 7 PM Saturday, Singapore’s 24-hour PSI was **118–168**, down from Friday’s 136–192 range but still Unhealthy. NEA forecasts Unhealthy to High Unhealthy conditions as smoke continues to drift from southern Sumatra.
-- **Markets carry Friday’s steadier close into a heavy policy week.** The STI’s latest completed close remains **5,401.89**, down 0.20%. The S&P 500 gained 0.59% on Friday, but Brent settled at **US$104.72** and the US 10-year yield near **5.24%**.
-- **Wednesday is Singapore’s main macro test.** All 10 economists in a Reuters poll expect MAS to tighten its exchange-rate policy stance. The decision, US CPI and Chinese trade data arrive on the same day.
+- **Oil is Monday’s immediate shock.** Brent futures rose **0.73% to US$105.48** by 7:04 AM SGT after weekend attacks on two tankers and intensified strikes involving Saudi Arabia and Yemen’s Houthis.
+- **Haze eased again, but remains an operating constraint.** At 6 PM Sunday, Singapore’s 24-hour PSI was **112–155**, Unhealthy. NEA forecasts the Unhealthy range as smoke continues drifting from southern Sumatra and West Kalimantan.
+- **Wednesday is Singapore’s main policy test.** All 10 economists in a Reuters poll expect MAS to tighten its exchange-rate policy stance. The decision coincides with US CPI and Chinese trade and price data.
 
 ## STRAITS TIMES INDEX · STI
 
 <div class="market-value">5,401.89 <span class="down">▼ 11.07 (-0.20%)</span></div>
 
-**LATEST COMPLETED SESSION · Friday, 9 October · index points.** Previous close: 5,412.96. Singapore’s market was closed on Saturday; there is no newer STI session. [Business Times · 9 October, 6:19 PM SGT](https://www.businesstimes.com.sg/companies-markets/singapore-shares-end-lower-amid-mixed-regional-trading-sti-down-0-2)
+**LATEST COMPLETED SESSION · Friday, 9 October · index points.** Previous close: 5,412.96. Singapore’s Monday market had not opened by the cutoff; there is no newer STI session. [Business Times · 9 October, 6:19 PM SGT](https://www.businesstimes.com.sg/companies-markets/singapore-shares-end-lower-amid-mixed-regional-trading-sti-down-0-2)
 
 Friday’s move was a stabilisation, not a rebound, after Thursday’s 3.49% fall. DBS declined S$0.49 to S$73.36 and UOB lost S$0.29 to S$39.96, while OCBC held at S$29.00. Financials therefore remained the principal drag on a benchmark still absorbing the prior session’s bank-led reset.
 
-Yangzijiang Shipbuilding was the STI’s best percentage performer, rising 3.2% to S$5.10; Mapletree Logistics Trust was the weakest, down 1.8% to S$1.08. Hong Kong gained 1.8%, Kuala Lumpur 0.5% and Tokyo was nearly flat. US equities later closed higher, but oil and long Treasury yields remain restrictive inputs for Monday’s reopening. No weekend price action is implied.
+Yangzijiang Shipbuilding was the STI’s best percentage performer, rising 3.2% to S$5.10; Mapletree Logistics Trust was the weakest, down 1.8% to S$1.08. Hong Kong gained 1.8%, Kuala Lumpur 0.5% and Tokyo was nearly flat. US equities later closed higher. Monday’s new input is oil: Brent futures extended gains above US$105 before Singapore’s open. That is a pre-open risk signal, not an explanation for Friday’s completed STI move.
 
 ## SINGAPORE BELLWETHERS
 
@@ -71,9 +71,9 @@ Absolute moves are omitted because a matched prior observation from the same ben
 | Nasdaq 100 / NDX | 30,883.15 | ▲ 157.34 (+0.51%) | Unavailable | Unavailable |
 | Hang Seng | 24,211.35 | ▲ 425.56 (+1.79%) | Unavailable | Unavailable |
 
-**FRIDAY CASH CLOSES · no Saturday session.** The S&P close is independently reported by AP and WSJ. The Nasdaq 100 is the **NDX cash price index**, not the Nasdaq Composite, an ETF or futures; its completed close is reported by Investing.com and corroborated by a second NDX data provider. The Hang Seng figure is Friday’s completed Hong Kong close. [AP](https://apnews.com/article/stock-market-wall-street-trump-iran-222c02f0849dc42f08d13f56c2896895) · [Nasdaq 100 history](https://www.investing.com/indices/nq-100-historical-data) · [Reuters HSI](https://www.reuters.com/markets/quote/.HSI/)
+**FRIDAY CASH CLOSES · Monday sessions not yet completed.** The S&P close is independently reported by AP and WSJ. The Nasdaq 100 is the **NDX cash price index**, not the Nasdaq Composite, an ETF or futures; its completed close is reported by Investing.com and corroborated by a second NDX data provider. The Hang Seng figure is Friday’s completed Hong Kong close. [AP](https://apnews.com/article/stock-market-wall-street-trump-iran-222c02f0849dc42f08d13f56c2896895) · [Nasdaq 100 history](https://www.investing.com/indices/nq-100-historical-data) · [Reuters HSI](https://www.reuters.com/markets/quote/.HSI/)
 
-Reuters reported that risk appetite improved after US President Donald Trump said the United States would not attack Iran before the midterm elections. The statement reduced an immediate escalation premium; it did not resolve the conflict or energy risk. Brent settled at **US$104.72** and WTI at **US$91.85**, both up about 0.4%. The US 10-year Treasury yield finished near **5.24%**.
+Reuters reported that risk appetite improved on Friday after US President Donald Trump said the United States would not attack Iran before the midterm elections. The weekend then produced a fresh energy escalation: the UKMTO reported two tanker attacks, while Houthis intensified strikes on Saudi Arabia. At **7:04 AM SGT Monday**, Brent futures were **US$105.48**, up US$0.76 or 0.73%, and WTI was US$92.44, up US$0.59 or 0.64%. These are live futures observations, not Friday settlements. [Reuters · 12 October, 7:26 AM SGT](https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/)
 
 Next week brings US CPI, bank earnings and Chinese trade data. Technology participated in Friday’s advance, but scrutiny of debt-funded AI capacity continues. No 30D or 1Y cash-index return is printed because the exact price-index endpoints were not fully reconciled across two independent sources.
 
@@ -88,16 +88,16 @@ USD/SGD’s provider row shows an open of 1.2799, high of 1.2815, low of 1.2788 
 
 ## ON THE RADAR
 
-### OPERATIONS · HAZE
-### Air quality improves from Friday’s peak, but planning risk persists
+### ENERGY · SHIPPING
+### Tanker attacks lift Monday’s oil and logistics risk
 
-**UPDATED · 10 October, 7 PM.** NEA reported Singapore’s one-hour PM2.5 at **63–107 µg/m³**, all within Band 2, Elevated. The 24-hour PSI was **118–168**, Unhealthy, compared with 136–192 at 7 PM Friday. Showers helped conditions, but the improvement did not end the episode. [NEA · 10 October](https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-10-october-2026)
+**NEW · MONDAY PRE-OPEN.** Brent futures extended gains to US$105.48 a barrel by 7:04 AM SGT after attacks on two tankers over the weekend and escalating strikes involving Saudi Arabia and Yemen’s Iran-aligned Houthis. Reuters cited UKMTO reports of a drone strike near Oman’s Sohar anchorage and damage to another tanker in the Strait of Hormuz. [Reuters · 12 October](https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/)
 
-NEA observed moderate-to-dense smoke haze from southern Sumatra drifting toward Singapore, with haze also over many parts of Kalimantan. It forecasts the 24-hour PSI in the **Unhealthy to High Unhealthy** range. East-southeasterly or southerly winds may continue carrying smoke despite some showers.
+Energy majors were also restoring Gulf of Mexico production after Hurricane Isaias. Goldman Sachs raised its December Brent forecast to US$90 from US$85, while estimating the current geopolitical risk premium at just over US$20 a barrel. That is an analyst forecast, not the observed futures price.
 
-**WHY IT MATTERS:** the 24-hour PSI is the planning measure for prolonged activity; one-hour PM2.5 is the immediate activity signal. Employers, event organisers and schools should not treat Saturday’s lower range as an all-clear. Operational choices should use current readings, staff health profiles, exertion level and official guidance.
+**WHY IT MATTERS:** Singapore is a net energy importer and a major refining, aviation and maritime hub. Sustained oil and insurance premiums can feed fuel bills, freight rates, imported inflation and MAS’s policy calculus. A tanker incident can matter even without a prolonged supply outage because routing, crew and insurance decisions adjust immediately.
 
-**WATCH NEXT:** live one-hour PM2.5, the five regional PSI readings, wind direction and NEA’s Sunday evening advisory. No 8 AM numeric PSI is stated because an official timestamped morning table was not available to this briefing.
+**WATCH NEXT:** verified shipping notices, Saudi and US military statements, the pace of Gulf of Mexico production recovery and whether Brent holds above US$105 after Asian markets open.
 
 ## DIVIDENDS & INCOME
 
@@ -124,7 +124,7 @@ These are floors: the OA legislated minimum is 2.5%, while the 4% SMRA floor has
 
 ## THIS WEEK
 
-**FUTURE EVENTS · as of Sunday’s cutoff.**
+**FUTURE EVENTS · as of Monday’s 8:00 AM SGT cutoff.**
 
 | Day · date | Event | Why it matters |
 |---|---|---|
@@ -138,7 +138,7 @@ These are floors: the OA legislated minimum is 2.5%, while the 4% SMRA floor has
 
 ## WORLD / SINGAPORE
 
-<div class="editorial-columns"><div class="editorial-column"><h3 class="region-heading">World</h3><article class="dispatch-story"><div class="story-stat">US$104.72</div><div class="story-label">ENERGY · MIDDLE EAST</div><h4>Oil carries a large risk premium into the new week</h4><p>Brent’s Friday settlement remained above US$104 even after President Trump ruled out a US attack on Iran before the midterm elections. The signal helped equities, but did not resolve the conflict, shipping exposure or supply uncertainty.</p><div class="story-impact"><strong>Why it matters</strong><p>Singapore is a refining, aviation and maritime hub and a net energy importer. Sustained oil strength can lift operating costs and imported inflation ahead of MAS’s review.</p></div><p class="story-watch"><strong>Watch next</strong> · verified shipping incidents, official military statements and producer responses.</p><a href="https://www.reuters.com/world/china/global-markets-wrapup-1-2026-10-09/">Reuters · 9 October</a></article><article class="dispatch-story"><div class="story-label">GLOBAL ECONOMY · BANGKOK</div><h4>IMF meetings open under debt and energy pressure</h4><p>The IMF and World Bank meet in Bangkok with growth, debt and geopolitics at the centre. Reuters says Tuesday’s World Economic Outlook follows two earlier global-growth downgrades linked to the Iran war.</p><a href="https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-10-09/">Reuters · week ahead</a></article><article class="dispatch-story"><div class="story-label">RATES · UNITED STATES</div><h4>Inflation will test the bond market</h4><p>Wednesday’s CPI is one of the last major releases before the late-October Fed decision. Reuters’ poll puts headline inflation at 0.6% month on month and core at 0.2%.</p></article></div><div class="editorial-column"><h3 class="region-heading">Singapore</h3><article class="dispatch-story"><div class="story-stat">118–168</div><div class="story-label">AIR QUALITY · 10 OCTOBER, 7 PM</div><h4>Readings retreat, forecast stays Unhealthy</h4><p>The 24-hour PSI improved from Friday’s 136–192 range but remained Unhealthy. NEA expects Unhealthy to High Unhealthy conditions and says smoke may continue to drift from southern Sumatra and Kalimantan.</p><div class="story-impact"><strong>Why it matters</strong><p>Outdoor work and events should use live one-hour PM2.5 for immediate activity and the 24-hour forecast for next-day planning.</p></div><a href="https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-10-october-2026">NEA · 10 October</a></article><article class="dispatch-story"><div class="story-label">MONETARY POLICY · MAS</div><h4>Unanimous poll is not the decision</h4><p>All 10 economists surveyed by Reuters expect tightening on Wednesday. The slope, width or centre of the S$NEER band—and MAS’s language—will determine the practical impact.</p><a href="https://www.reuters.com/world/asia-pacific/singapore-poised-tighten-monetary-policy-amid-strong-growth-rising-inflation-2026-10-09/">Reuters · 9 October</a></article><article class="dispatch-story"><div class="story-label">EQUITIES · FINANCIALS</div><h4>Banks face a results test, not a weekend price signal</h4><p>DBS and UOB declined less than 1% on Friday after Thursday’s larger losses; OCBC was flat. November results remain the next direct evidence on earnings and capital returns.</p></article><article class="dispatch-story"><div class="story-label">TRANSPORT · COE</div><h4>Commercial vehicles remain the premium outlier</h4><p>In the 7 October exercise, Category C rose to S$33,089 from S$28,589 while A, B and Open Category E eased. The next exercise will show whether the divergence persists.</p><a href="https://www.channelnewsasia.com/singapore/coe-prices-close-mixed-end-oct-7-bidding-exercise-5665391">CNA · 7 October</a></article></div></div>
+<div class="editorial-columns"><div class="editorial-column"><h3 class="region-heading">World</h3><article class="dispatch-story"><div class="story-stat">US$105.48</div><div class="story-label">ENERGY · MIDDLE EAST</div><h4>Tanker attacks extend oil’s rally</h4><p>Brent futures rose 0.73% by 7:04 AM SGT Monday after weekend attacks on two tankers and intensified Houthi strikes on Saudi Arabia. The observed price is a live futures quote, not a settlement.</p><div class="story-impact"><strong>Why it matters</strong><p>Singapore is a refining, aviation and maritime hub and a net energy importer. Sustained oil and shipping premiums can lift operating costs and imported inflation ahead of MAS’s review.</p></div><p class="story-watch"><strong>Watch next</strong> · verified shipping notices, military statements and Gulf production recovery.</p><a href="https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/">Reuters · 12 October</a></article><article class="dispatch-story"><div class="story-label">GLOBAL ECONOMY · BANGKOK</div><h4>Debt and energy dominate the IMF meetings</h4><p>Reuters reports the IMF and World Bank meetings open against a major energy shock and public debt at its highest since World War Two. Developing countries face about US$400 billion of external debt payments in 2026.</p><a href="https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/">Reuters · 11 October</a></article><article class="dispatch-story"><div class="story-label">RATES · UNITED STATES</div><h4>Inflation will test the bond market</h4><p>Wednesday’s CPI is one of the last major releases before the late-October Fed decision. Reuters’ poll puts headline inflation at 0.6% month on month and core at 0.2%.</p></article></div><div class="editorial-column"><h3 class="region-heading">Singapore</h3><article class="dispatch-story"><div class="story-stat">112–155</div><div class="story-label">AIR QUALITY · 11 OCTOBER, 6 PM</div><h4>Readings ease; forecast remains Unhealthy</h4><p>NEA reported one-hour PM2.5 at 39–111 µg/m³, spanning Normal to Elevated, while the 24-hour PSI was 112–155. Smoke from southern Sumatra and West Kalimantan continued drifting toward Singapore.</p><div class="story-impact"><strong>Why it matters</strong><p>Outdoor work and events should use current one-hour PM2.5 for immediate activity and the 24-hour forecast for planning.</p></div><a href="https://www.nea.gov.sg/media/news/advisories/index/haze-situation-update-11-october-2026">NEA · 11 October</a></article><article class="dispatch-story"><div class="story-label">MONETARY POLICY · MAS</div><h4>Unanimous poll is not the decision</h4><p>All 10 economists surveyed by Reuters expect tightening on Wednesday. The slope, width or centre of the S$NEER band—and MAS’s language—will determine the practical impact.</p><a href="https://www.reuters.com/world/asia-pacific/singapore-poised-tighten-monetary-policy-amid-strong-growth-rising-inflation-2026-10-09/">Reuters · 9 October</a></article><article class="dispatch-story"><div class="story-label">EQUITIES · FINANCIALS</div><h4>Banks reopen into oil and rates pressure</h4><p>DBS and UOB declined less than 1% on Friday after Thursday’s larger losses; OCBC was flat. Monday’s pre-open oil rise adds an inflation and discount-rate risk, but not yet a completed local price signal.</p></article><article class="dispatch-story"><div class="story-label">TRANSPORT · COE</div><h4>Commercial vehicles remain the premium outlier</h4><p>In the 7 October exercise, Category C rose to S$33,089 from S$28,589 while A, B and Open Category E eased. The next exercise will show whether the divergence persists.</p><a href="https://www.channelnewsasia.com/singapore/coe-prices-close-mixed-end-oct-7-bidding-exercise-5665391">CNA · 7 October</a></article></div></div>
 
 ## INDUSTRY PULSE · LIGHTING & ELECTRICAL
 
@@ -160,15 +160,19 @@ Schneider Electric’s US$22.6 billion agreement to acquire PTC, announced 4 Oct
 ## TECH & AI
 
 ### TECH · AI DEALS
-### Nvidia’s Reflection talks put open-weight coding tools in focus
+### Amazon’s reported Decart talks target real-time world models
 
-**US$800 million · existing reported investment.** Reuters, citing a Financial Times report, said Nvidia is in early-stage discussions to deepen its investment in Reflection AI or acquire the open-source startup. Possible structures include a full purchase or an acqui-hire under which Nvidia would hire staff and license technology. Discussions could fail; neither Nvidia nor Reflection confirmed an agreement. [Reuters · 10 October, 7:32 PM UTC](https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/)
+**AROUND US$7 BILLION · reported potential value.** Reuters, citing a Wall Street Journal report, said Amazon is in talks to acquire Decart, an Israeli AI startup developing real-time video and simulated environments. Amazon and Decart did not comment to Reuters, which could not independently verify the report; the talks may fail. This is a reported negotiation, not a completed transaction. [Reuters · 12 October, 5:16 AM SGT](https://www.reuters.com/business/retail-consumer/amazon-talks-buy-ai-startup-decart-around-7-billion-wsj-reports-2026-10-11/)
 
-Reflection was founded in 2024 by former DeepMind researchers Misha Laskin and Ioannis Antonoglou and develops software-development automation tools. The company launched its first open-weight model, Beam, last Monday. Reuters reported Nvidia is already a major backer, with an US$800 million investment, while Reflection’s chief executive said in April that the company was raising money at a US$25 billion pre-money valuation.
+Decart’s Lucy product applies edits to live video, while Oasis creates interactive simulated environments that could be used to train robotics and autonomous-driving systems. Reuters said Decart was valued at nearly US$4 billion in May and has raised more than US$300 million; Nvidia is among its backers.
 
-The story is a **reported negotiation**, not a signed deal. The strategic logic is nevertheless clear: coding agents sit close to enterprise workloads, developer ecosystems and accelerator demand. For Nvidia, a deeper relationship could extend its influence above hardware into models and tooling. It would also raise questions about platform neutrality and whether customers see open-weight positioning as durable under strategic ownership.
+The strategic logic reaches beyond video generation. Amazon owns a hyperscale cloud, a large advertising business, warehouse robotics and consumer devices. Real-time world models could connect those assets, while giving AWS another differentiated AI workload. The financial hurdle is substantial: the reported consideration would be well above Decart’s latest cited valuation, making retention, compute intensity and commercial adoption central diligence questions.
 
-**WHY IT MATTERS · Analysis:** Singapore’s banks, government agencies and software firms are adopting coding and agentic tools while regulators demand stronger lifecycle controls. Competition among model providers can improve choice, but consolidation around a dominant chip supplier could increase dependency. Watch for confirmed structure, price, licensing terms and customer-access commitments.
+**WHY IT MATTERS · Analysis:** Singapore is both an AWS regional hub and an expanding data-centre market. A shift from text models toward always-on video and simulation would increase demand for accelerators, networking and power while broadening enterprise use cases. Watch for confirmation, transaction structure, customer protections and whether the reported valuation survives diligence.
+
+### TECH · AI MODELS
+
+Nvidia is separately in early-stage discussions to deepen its investment in Reflection AI or acquire the open-weight coding startup, Reuters reported citing the Financial Times. Nvidia’s existing reported investment is US$800 million; no agreement has been announced and talks could fail. The distinction matters because a strategic investment, licensing arrangement and acquisition create different consequences for platform neutrality. [Reuters · 10 October](https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/)
 
 ### TECH · AI GOVERNANCE
 
@@ -178,17 +182,13 @@ OpenAI said it fired three researchers after an internal investigation found vio
 
 Firmus Technologies’ withdrawal of its planned Australian IPO remains the week’s sharpest financing signal. The Nvidia- and Blackstone-backed firm had targeted an A$44 billion valuation. The withdrawal does not establish falling AI demand; it shows public investors are demanding stronger proof on capacity, funding and cash conversion. [Reuters Breakingviews · 9 October](https://www.reuters.com/commentary/breakingviews/failed-ai-ipo-puts-fear-before-fomo-2026-10-09/)
 
-### TECH · SINGAPORE
-
-MAS’s 7 October AI-risk guidelines give financial institutions a phased runway: governance and lifecycle expectations begin 7 October 2027, with later sections following in 2028. MAS plans consultation on agentic AI in 2027. These are issued supervisory expectations, not a preview. [MAS · 7 October](https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions)
-
 ## TODAY'S LINE
 
-> **Original editorial line:** “A quieter market day is not the same thing as a quieter risk environment.”
+> **Original editorial line:** “A live price is evidence of pressure, not proof of permanence.”
 
 ## SOURCES & DATA
 
-Primary and high-quality sources are linked beside the claims they support. Core market observations: Business Times, Friday 9 October close; AP/WSJ and Reuters, US session completed Saturday 4:00 AM SGT; Investing.com NDX and Reuters HSI; Reuters metals, 10 October 3:29 AM SGT; Reuters/AP oil and Treasuries. Official Singapore sources: NEA, 10 October 7 PM; MAS SSB and T-bill pages through 10 October; CPF, 22 September; MAS release calendar and AI guidance. Company sources: Acuity SEC filing, 1 October; Signify calendar. Weekend technology reporting: Reuters, 10 October.
+Primary and high-quality sources are linked beside the claims they support. Core market observations: Business Times, Friday 9 October close; AP/WSJ and Reuters, US session completed Saturday 4:00 AM SGT; Investing.com NDX and Reuters HSI; Reuters metals, 10 October 3:29 AM SGT; Reuters Brent futures, observed 12 October 7:04 AM SGT; Reuters/AP Treasuries. Official Singapore sources: NEA update at 6:00 PM on 11 October; MAS SSB and T-bill pages through 10 October; CPF, 22 September; MAS release calendar and AI guidance. Company sources: Acuity SEC filing, 1 October; Signify calendar. Technology reporting: Reuters through 12 October 5:16 AM SGT.
 
 ### Historical verification evidence gate
 
@@ -202,6 +202,7 @@ Primary and high-quality sources are linked beside the claims they support. Core
 
 For each target, the reference must be the last actual trading session on or before that date—never a later session. A compliant evidence table also requires endpoint values, actual reference dates, field, adjustment method, source URLs and retrieval time. Those numeric rows are intentionally absent because complete original tables and independent second-source reconciliation were not obtained. The build gate treats missing or mismatched evidence as Unavailable, with a 0.005 percentage-point tolerance for any published numeric return. No numeric 30D/1Y return was “corrected” by substitution; each remains withdrawn.
 
-COMPILED FROM OPEN REPORTING · GENERATED 11 OCTOBER 2026, 8:03 AM SGT
+COMPILED FROM OPEN REPORTING · GENERATED 12 OCTOBER 2026, 8:02 AM SGT
 
 Information is provided for general informational purposes and does not constitute investment advice.
+
