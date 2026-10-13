@@ -75,7 +75,9 @@ Absolute moves are omitted because a matched prior observation from the same ben
 
 The S&P 500 was nearly flat, while energy rose 1.5% and technology fell 0.9%; the Philadelphia semiconductor index lost 2.7%. Microsoft gained 1.1% after announcing Maia 300 deployment plans. Monday Brent settled at **US$106.65**, up 1.8%, and WTI at **US$93.74**. The US Treasury cash market was closed; Friday’s **5.24%** 10-year yield remains the latest completed observation, not a Monday close.
 
-Tuesday brings major-bank earnings before Wednesday’s CPI. Reuters said traders assigned an almost 22% chance of an October Fed hike, up from 17.7% Friday. No 30D or 1Y index return is printed because historical endpoints were not fully reconciled across two independent sources.
+Tuesday brings major-bank earnings before Wednesday’s CPI. Reuters said traders assigned an almost 22% chance of an October Fed hike, up from 17.7% Friday.
+
+No 30D or 1Y index return is printed because historical endpoints were not fully reconciled across two independent sources.
 
 ## CURRENCIES · VERIFIED STATUS
 
