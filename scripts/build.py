@@ -129,7 +129,12 @@ def verified_history(text):
         return f'<span class="badge {"up" if rounded>=0 else "down"}">{direction} {rounded:+.2f}%</span>'
     clean=re.sub(r'\{\{RETURN:([\w.-]+)\}\}',replace,clean)
     if audit:
-        clean+='\n\n## Historical return evidence\n\n'+''.join(audit)
+        audit_block='\n\n### Verified historical return evidence\n\n'+''.join(audit)+'\n\n'
+        footer_marker='COMPILED FROM OPEN REPORTING'
+        if footer_marker in clean:
+            clean=clean.replace(footer_marker,audit_block+footer_marker,1)
+        else:
+            clean+=audit_block
     return clean
 
 def render(text, archive=False):
@@ -151,8 +156,8 @@ def render(text, archive=False):
                 idx=iter(labels)
                 return re.sub(r'<td([^>]*)>',lambda cell: '<td'+cell.group(1)+' data-label="'+html.escape(re.sub('<.*?>','',next(idx,'')),quote=True)+'">',m.group(0))
             return re.sub(r'<tr>.*?</tr>',row,table,flags=re.S)
-        if 'BELLWETHERS' in heading or 'GLOBAL MARKETS' in heading:
-            body=re.sub(r'([▲▼] [＋+−-]\d+\.\d+%)', lambda m: '<span class="badge '+('up' if '▲' in m.group(0) else 'down')+'">'+m.group(0)+'</span>', body)
+        # verified_history already supplies a single evidence-backed badge.
+        # Do not wrap its rendered percentage a second time.
         body=re.sub(r'<table>.*?</table>',label_table,body,flags=re.S)
         body=re.sub(r'<table>(.*?)</table>',r'<div class="table-wrap"><table>\1</table></div>',body,flags=re.S)
         body=re.sub(r'<td>([+]\d[^<]*)</td>',r'<td class="up">\1</td>',body)
